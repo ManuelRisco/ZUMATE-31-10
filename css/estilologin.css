@@ -1,0 +1,69 @@
+
+.top-bar {
+    background: linear-gradient(45deg, #5433bf, #e8491d);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-bar a:hover {
+    color: #e8491d;
+}
+
+.contenedor{
+    padding-bottom: 5%;
+
+}
+
+.container{
+    flex-grow :1;
+}
+
+.signin-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.signin-image img {
+    width: 100%;
+	height: 100%;
+}
+
+#fondo-form{
+    background-color: white;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    margin-top: auto;
+}
+
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    margin: 0px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 991px) {
+    .btn-donar {
+        margin: 20px auto; /* Centrar el botón y añadir margen superior e inferior */
+        display: block; /* Asegúrate de que se comporta como bloque */
+    }
+}

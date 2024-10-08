@@ -1,0 +1,142 @@
+
+header{
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.top-bar {
+    background: linear-gradient(45deg, #5433bf, #e8491d);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-bar a:hover {
+    color: #e8491d;
+}
+
+.container{
+    flex-grow :1;
+}
+.contenedor{
+    padding: 3% 15% 3% 15%; 
+    width: 100% !important;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption h5 {
+    font-size: 2vw;
+}
+
+.carousel-caption p {
+    font-size: 2vw;
+}
+
+
+.signin-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.signin-image img {
+    width: 100%;
+	height: 100%;
+}
+
+#fondo-form{
+    background-color: white;
+}
+
+
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    margin: 0px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.contenedor-2{
+    padding: 3% 15% 3% 15%;
+    width: 100% !important;
+    height: auto;
+    background-color: rgba(181, 227, 74, 1.0);
+    color: white;
+}
+
+.contenedor-noticias{
+    background-color: rgba(65, 76, 109, 1.0);
+    padding: 3% 20% 3% 20%;
+    width: 100% !important;
+    height: auto;
+    color: white;
+
+}
+
+.tarjeta{
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    transition: all 400ms ease;
+}
+
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-noticia{
+    position: absolute;
+    font-size: 70%;
+    text-align: justify;
+    top: 70%; 
+    left: 20%; 
+    transform: translate(-10%, -60%); 
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+}
+@media (max-width: 991px) {
+    .btn-donar {
+        margin: 20px auto; /* Centrar el botón y añadir margen superior e inferior */
+        display: block; /* Asegúrate de que se comporta como bloque */
+    }
+}
+
+
+

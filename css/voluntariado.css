@@ -1,0 +1,112 @@
+.navbar {
+    right: 30px;
+}
+/* Estilo para el contenedor del formulario */
+#fondo-form {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; /* Margen superior e inferior para separarlo del resto */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 400px; /* Altura mínima ajustada */
+}
+
+/* Estilo para el textarea */
+#txtexp {
+    width: 100%; /* Asegura que el textarea tome el 100% del ancho disponible */
+    resize: none; /* Deshabilita la opción de agrandar o achicar el textarea */
+    height: auto; /* Ajusta la altura automáticamente */
+    min-height: 100px; /* Establece una altura mínima */
+    padding: 10px; /* Añade espaciado interno */
+    border: 1px solid #ccc; /* Borde suave */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra interior */
+}
+
+/* Estilo para la barra superior */
+.top-bar {
+    background: linear-gradient(45deg, #5433bf, #e8491d);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el formulario */
+form {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+/* Estilo para los enlaces en la barra superior */
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.top-bar a:hover {
+    color: #e8491d;
+}
+
+/* Contenedor principal */
+.contenedor {
+    padding-bottom: 5%;
+}
+
+/* Contenedor general */
+.container {
+    flex-grow: 1;
+}
+.signin-image img {
+    width: 100%;
+    height: 100%;
+}
+/* Estilo para el pie de página */
+footer {
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    margin-top: auto;
+}
+
+/* Estilo para el botón de donación */
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+.btn-donar:hover {
+    background-color: #e30f0f; /* Color más oscuro al pasar el cursor */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 577px) {
+    #fondo-form {
+        padding: 10px; /* Menos padding en pantallas pequeñas */
+        margin-left: 10px; /* Margen izquierdo en pantallas pequeñas */
+        margin-right: 10px; /* Margen derecho en pantallas pequeñas */
+        /* Cambia el ancho en pantallas pequeñas */
+        width: calc(100% - 20px); /* Ancho completo menos márgenes */
+    }
+}
+
+@media (max-width: 991px) {
+    .btn-donar {
+        margin: 20px auto; /* Centra el botón y añade margen superior e inferior */
+        display: block; /* Asegura de que se comporta como bloque */
+    }
+}

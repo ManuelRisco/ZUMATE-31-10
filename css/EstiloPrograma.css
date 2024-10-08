@@ -1,0 +1,427 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333333;
+}
+
+/* --- Header --- */
+header {
+    background: linear-gradient(45deg, #5433bf, #e8491d);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: #e8491d;
+}
+
+/* Barra de menú */
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alineado a la derecha */
+    width: 100%;
+    padding: 1% 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+}
+
+nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.menu-bar a {
+    color: #5433bf;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+.menu-bar a:hover {
+    background: #5433bf;
+    color: #ffffff;
+}
+
+/* --- Primera Sección: Introducción --- */
+.intro-section {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 150px 80px; 
+    background-color: #f8f8f8; 
+    margin-bottom: 50px; 
+    top: 100px;
+    position: relative;
+}
+
+.intro-content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 60px; 
+    width: 100%; 
+}
+
+.intro-text {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.intro-text h2 {
+    font-size: 3.0em; 
+    color: #5433bf; 
+}
+
+.intro-text p {
+    font-size: 2.0em; 
+    color: #666; 
+}
+
+.intro-text .btn {
+    background-color: #5433bf; 
+    color: white; 
+    padding: 10px 20px; 
+    margin-top: 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.intro-image {
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-end; 
+}
+
+.intro-image img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; /* Cubre el área del contenedor sin deformarse */
+}
+
+/* --- Segunda Sección: Programas --- */
+
+ /* Estilos básicos para el carrusel */
+ .carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(400px * 6.2); /* Ajusta según el número total de tarjetas */
+}
+
+.program-card {
+    width: 700px; /* Establecer un ancho fijo para cada tarjeta */
+    height: 400px; /* Establecer un alto fijo para cada tarjeta */
+    margin: 10px; /* Espacio entre tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; /* Usar flexbox para alinear contenido */
+    flex-direction: column; /* Alinear contenido en columna */
+    text-align: center; /* Centrar texto */
+}
+
+.program-card img {
+    width: 100%; /* Asegura que la imagen llene la tarjeta */
+    height: 300px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.btn {
+    display: inline-block;
+    margin-top: auto; /* Empuja el botón hacia el fondo */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Centra el texto en el botón */
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+/*Programa*/
+.program-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #add8e6; 
+}
+
+.program-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #5433bf;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.program-card {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(29, 232, 247, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+}
+
+.program-card img {
+    width: 100%; 
+    height: auto; 
+    max-height: 200px; /* Limita la altura de las imágenes */
+    object-fit: cover; 
+}
+
+.program-card h3 {
+    color: #5433bf;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.program-card .btn {
+    display: inline-block;
+    background-color: #5433bf;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.program-card .btn:hover {
+    background-color: #e8491d;
+}
+
+/* --- Tercera Sección: Formulario de Donaciones --- */
+.donation-section {
+    background-color: #f8f8f8; 
+    padding: 62px 20px; 
+    text-align: center; 
+}
+
+.donation-section h2 {
+    font-size: 2.5em; 
+    margin-bottom: 20px; 
+    color: #5433bf; 
+}
+
+.donation-section p {
+    font-size: 1.2em; 
+    margin-bottom: 40px; 
+    color: #666; 
+}
+
+.donation-section form {
+    max-width: 600px; 
+    margin: 0 auto; 
+    background-color: #ffffff; 
+    padding: 20px 60px; /* Ajustar padding para que sea más igualado */
+    border-radius: 10px; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.donation-section .form-group {
+    margin-bottom: 20px; 
+    text-align: left; 
+}
+
+.donation-section .form-group label {
+    font-size: 1.2em; 
+    color: #5433bf; 
+}
+
+.donation-section .form-group input {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 50px; 
+    border: 1px solid #ddd; 
+    font-size: 1em; 
+}
+
+.donation-section .btn {
+    background-color: #5433bf; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.donation-section .btn:hover {
+    background-color: #e8491d; 
+}
+
+/* --- Footer --- */
+footer {
+    background: #212429;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-services a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer .footer-services a:hover {
+    color: #e8491d;
+    text-decoration: underline;
+}
+
+/* Dropdown en el menú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    z-index: 1;
+    min-width: 160px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: #5433bf;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #5433bf;
+}
+
+/* Mostrar menú desplegable al pasar el mouse */
+.menu-item:hover .dropdown-content {
+    display: block;
+}
+
+.menu-item i {
+    margin-left: 5px;
+}
+/* --- Footer --- */
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    position: relative;
+    top: 200px;
+  }
+
+
+
+
+footer .footer-content .social-links a:hover {
+    color: #e8491d;
+}
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; 
+        padding: 50px 20px; 
+    }
+    
+    .intro-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .program-card {
+        text-align: center; 
+    }
+    
+    .donation-section {
+        padding: 30px 10px; 
+    }
+}
+

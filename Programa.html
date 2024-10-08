@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Programas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/EstiloPrograma.css"> 
+
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <div>
+            <a href="./login.html">Iniciar Sesión</a>
+            <a href="./Redesociales.html">Redes Sociales</a>
+            <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/zumateong/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank"
+            aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="menu-bar">
+        <div class="logo">
+            <img src="Imagenes/Programa/LogoFondo.png" alt="Logo de ZUMATE">
+        </div>
+        <nav>
+            <a href="./index.html">INICIO</a>
+            <a href="./SobreNosotros.html">SOBRE NOSOTROS</a>
+            
+                <!-- Menú desplegable para PROGRAMAS -->
+                <div class="menu-item dropdown">
+                    <a href="./Programa.html" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">PROGRAMAS <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="./Programa1.html">Programa 1</a>
+                        <a href="./Programa2.html">Programa 2</a>
+                        <a href="./Programa3.html">Programa 3</a>
+                        <a href="./Programa4.html">Programa 4</a>
+                    </div>
+                </div>
+        
+            <a href="./como-ayudar.html">¿CÓMO AYUDAR?</a>
+            <a href="#Blog">BLOG</a>
+            <a href="#Contacto">CONTACTO</a>
+        </nav>
+        
+    </div>
+</header>
+
+<div class="container">
+    <!-- Primera sección: Imagen a la derecha y descripción a la izquierda -->
+    <section class="intro-section">
+        <div class="intro-content">
+            <div class="intro-text">
+                <h2>Transformando Vidas a Través de Nuestros Programas</h2>
+                <p>Nuestros programas están diseñados para ofrecer oportunidades a comunidades vulnerables, abordando necesidades clave en educación, salud y desarrollo comunitario.</p>
+                <a href="#donaciones" class="btn">Apoya con tu Donación</a>
+            </div>
+            <div class="intro-image">
+                <img src="Imagenes/Programa/NuestrosProgramas.jpg" alt="Nuestros Programas">
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda sección: Programas -->
+    <section class="program-section">
+        <div class="container">
+            <h1>Nuestros Programas</h1>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="program-card">
+                        <img src="Imagenes/Programa/Seccion1.jpg" alt="Programa de Educación">
+                        <h3>Programa de Educación</h3>
+                        <p>Brindamos oportunidades educativas para niños y adolescentes en situación de vulnerabilidad.</p>
+                        <a href="./Programa1.html" class="btn">Ver Más</a>
+                    </div>
+                    <div class="program-card">
+                        <img src="Imagenes/Programa/Seccion2.jpg" alt="Programa de Salud">
+                        <h3>Programa de Salud</h3>
+                        <p>Proporcionamos atención médica gratuita y charlas de prevención.</p>
+                        <a href="./Programa2.html" class="btn">Ver Más</a>
+                    </div>
+                    <div class="program-card">
+                        <img src="Imagenes/Programa/Seccion3.jpg" alt="Programa de Desarrollo Comunitario">
+                        <h3>Programa de Desarrollo Comunitario</h3>
+                        <p>Desarrollamos infraestructuras y proyectos que mejoran la calidad de vida.</p>
+                        <a href="./Programa3.html" class="btn">Ver Más</a>
+                    </div>
+                    <div class="program-card">
+                        <img src="Imagenes/Programa/Seccion1.jpg" alt="Programa de Prevención">
+                        <h3>Programa de Prevención</h3>
+                        <p>Campañas de sensibilización sobre los riesgos del pandillaje y drogadicción.</p>
+                        <a href="./Programa4.html" class="btn">Ver Más</a>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-control" id="prev" style="display: none;"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-control" id="next"><i class="fas fa-chevron-right"></i></button>
+                </div>                
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Tercera sección: Formulario de Donaciones -->
+    <section class="donation-section" id="donaciones">
+        <h2>Contribuye con una Donación</h2>
+        <p>Tu apoyo es fundamental para continuar con nuestros proyectos. Cualquier donación, grande o pequeña, marca la diferencia.</p>
+        <form action="procesar_donacion.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad a Donar</label>
+                <input type="number" id="cantidad" name="cantidad" required min="1">
+            </div>
+            <button type="submit" class="btn">Donar Ahora</button>
+        </form>
+    </section>
+</div>
+
+
+<footer class="bg-dark text-white pt-5 pb-4">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <img src="Imagenes/Login/logo.png" alt="logo zumate" height="80">
+                <p>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
+            </div>
+
+            <!-- Segunda columna -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="mb-4">Servicios</h5>
+                <hr class="mb-4">
+                <p><a class="nav-link" href="#">Contacto</a></p>
+                <p><a class="nav-link" href="#">Noticias</a></p>
+                <p><a class="nav-link" href="#">Opiniones</a></p>
+                <p><a class="nav-link" href="#">Donar</a></p>
+                <p><a class="nav-link" href="libro-reclamaciones.html">Libro de reclamaciones</a></p>
+            </div>
+
+            <!-- Tercera columna -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                <p>ZUMATE ONG</p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" 
+                        class="bi bi-house-heart-fill" viewBox="0 0 22 22">
+                        <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z" />
+                        <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018" />
+                    </svg>
+                    Oficina Central: Jr. Huiracocha N°1570 - Jesús María
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                        class="bi bi-telephone-fill" viewBox="0 0 18 18">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                    Teléfono: +51 917 365 659
+                </p>
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                    </svg>
+                    E-mail: zumate.vive@gmail.com
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+window.onload = function() {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownToggle.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita que el enlace recargue la página
+        // Alterna la visibilidad del contenido desplegable
+        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Cierra el menú si se hace clic fuera de él
+    document.addEventListener('click', function(event) {
+        if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+            dropdownContent.style.display = 'none'; // Oculta el contenido si se hace clic fuera
+        }
+    });
+};
+</script>
+
+
+<script>
+    let currentIndex = 0;
+
+    const items = document.querySelectorAll('.program-card');
+    const totalItems = items.length;
+    const itemsToShow = 3;
+
+    document.getElementById('next').addEventListener('click', () => {
+        if (currentIndex < totalItems - itemsToShow) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    function updateCarousel() {
+        const carouselInner = document.querySelector('.carousel-inner');
+        const offset = -currentIndex * (items[0].offsetWidth + 20); // 20 es el margen definido en CSS
+        carouselInner.style.transform = `translateX(${offset}px)`;
+    }
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const carouselInner = document.querySelector('.carousel-inner');
+        const cards = document.querySelectorAll('.program-card');
+        let currentIndex = 0; // Comenzamos en la primera tarjeta
+        const totalCards = cards.length;
+
+        function updateControls() {
+            // Ocultar el botón "prev" si estamos en la primera tarjeta
+            prevButton.style.display = currentIndex === 0 ? 'none' : 'block';
+            // Ocultar el botón "next" si estamos en la última tarjeta
+            nextButton.style.display = currentIndex === totalCards - 1 ? 'none' : 'block';
+        }
+
+        function moveCarousel(direction) {
+            const newIndex = currentIndex + direction; // Calculamos el nuevo índice
+            if (newIndex >= 0 && newIndex < totalCards) {
+                currentIndex = newIndex; // Actualizamos el índice actual
+                carouselInner.scrollBy({
+                    left: cards[0].offsetWidth * direction,
+                    behavior: 'smooth'
+                });
+                updateControls(); // Actualizar los controles
+            }
+        }
+
+        nextButton.addEventListener('click', () => {
+            moveCarousel(1); // Mueve hacia la derecha
+        });
+
+        prevButton.addEventListener('click', () => {
+            moveCarousel(-1); // Mueve hacia la izquierda
+        });
+
+        // Inicializar el estado de los botones
+        updateControls(); // Llamar a la función al cargar la página
+    });
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+
+</body>
+</html>
