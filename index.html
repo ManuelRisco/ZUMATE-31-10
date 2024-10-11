@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zumate ONG</title>
     <link rel="icon" href="Imagenes/Zumate.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/Inicio.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
     <style>
         body {
@@ -18,6 +18,7 @@
             justify-content: center;
             display: flex;
             flex-direction: column;
+            margin-top: 130px;
         }
     </style>
 </head>
@@ -31,13 +32,13 @@
                     <a href="./login.html">Iniciar Sesión</a>
                 </div>
                 <div>
-                    <a href="#">Redes Sociales:</a>
+                    <a href="#" class="d-none d-sm-inline">Redes Sociales:</a>
                     <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"
                         aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"
                         aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/zumateong/" target="_blank"
-                        aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/zumateong/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank"
                         aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
@@ -45,200 +46,236 @@
         </div>
         <!--Navbar-->
         <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container col-lg-12 col-md-12 col-sm-12 mx-auto">
-                <!--Logo-->
+            <div class="container-fluid">
                 <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="70">
-
-                <!--Boton responsive-->
-                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!--Barra lateral-->
-                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-
-                    <!--Cabecera barra lateral-->
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
                     </div>
-                    <div class="offcanvas-body col-lg-12 col-md-10 col-sm-12 mx-auto">
+                    <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sobre Nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./SobreNosotros.html">¿Quienes somos?</a></li>
+                                    <li><a class="dropdown-item" href="./nuestro-equipo.html">Nuestro equipo</a></li>
+                                    <li><a class="dropdown-item" href="./alianzas.html">Alianzas</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Programa.html">Programa</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Programas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Programa1.html">Programa1</a></li>
+                                    <li><a class="dropdown-item" href="./Programa2.html">Programa2</a></li>
+                                    <li><a class="dropdown-item" href="./Programa3.html">Programa2</a></li>
+                                    <li><a class="dropdown-item" href="./Programa4.html">Programa4</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./como-ayudar.html">¿Como ayudar?</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item"></li>
-                                <a class="btn-donar" href="./donar.html">Donar</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
+                <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!--Información de la página-->
 
-    <div class="contenedor row d-flex col-lg-12 col-md-10 col-sm-12 mx-auto">
-        <div style="height: 130px;"></div>
-        <!--Slider-->
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+    <!--Información de la página-->
+    <div class="contenedor-carousel row d-flex col-lg-12 col-md-12 col-sm-12 mx-auto">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img src="Imagenes/Inicio/imagen1.png" class="d-block w-100" alt="Imagen1">
-                    <div class="carousel-caption">
-                        <h5>Inicio</h5>
-                        <p>En ZUMATE, nuestra misión es transformar la vida de los niños más vulnerables de Perú.</p>
+                <div class="texto-carousel carousel-item active">
+                    <div class="card mx-auto" style="width: 80%">
+                        <img src="Imagenes/Inicio/imagen1.png" class="card-img-top d-none d-md-block" alt="Zumate 1">
+                        <div class="card-body">
+                            <h5 class="card-title">SOBRE NOSOTROS</h5>
+                            <p class="card-text">Somos una organización sin fines de lucro comprometida con brindar
+                                apoyo integral a niños y adolescentes en situación de vulnerabilidad. A través de
+                                proyectos educativos, culturales y recreativos, trabajamos para prevenir factores de
+                                riesgo como la deserción escolar, la exclusión social y la falta de acceso a recursos
+                                básicos de salud y bienestar, promoviendo un desarrollo saludable e inclusivo.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="Imagenes/Inicio/imagen2.png" class="d-block w-100" alt="Imagen2">
-                    <div class="carousel-caption">
-                        <h5>¿Como?</h5>
-                        <p>A través de donaciones, campañas solidarias y la colaboración de nuestra comunidad.</p>
+                <div class="texto-carousel carousel-item">
+                    <div class="card mx-auto" style="width: 80%;">
+                        <img src="Imagenes/Inicio/imagen2.png" class="card-img-top d-none d-md-block" alt="Zumate 2">
+                        <div class="card-body">
+                            <h5 class="card-title">SOBRE NOSOTROS</h5>
+                            <p class="card-text">Somos una organización sin fines de lucro comprometida con brindar
+                                apoyo integral a niños y adolescentes en situación de vulnerabilidad. A través de
+                                proyectos educativos, culturales y recreativos, trabajamos para prevenir factores de
+                                riesgo como la deserción escolar, la exclusión social y la falta de acceso a recursos
+                                básicos de salud y bienestar, promoviendo un desarrollo saludable e inclusivo.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="5000">
-                    <img src="Imagenes/Inicio/imagen3.png" class="d-block w-100" alt="Imagen3">
-                    <div class="carousel-caption">
-                        <h5>¿Entonces?</h5>
-                        <p>Trabajemos incansablemente para brindarles oportunidades, apoyo y esperanza.</p>
+                <div class="texto-carousel carousel-item">
+                    <div class="card mx-auto" style="width: 80%;">
+                        <img src="Imagenes/Inicio/imagen3.png" class="card-img-top d-none d-md-block" alt="Zumate 3">
+                        <div class="card-body">
+                            <h5 class="card-title">SOBRE NOSOTROS</h5>
+                            <p class="card-text">Somos una organización sin fines de lucro comprometida con brindar
+                                apoyo integral a niños y adolescentes en situación de vulnerabilidad. A través de
+                                proyectos educativos, culturales y recreativos, trabajamos para prevenir factores de
+                                riesgo como la deserción escolar, la exclusión social y la falta de acceso a recursos
+                                básicos de salud y bienestar, promoviendo un desarrollo saludable e inclusivo.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
-    <!--Contenedor nuestro propósito-->
-    <div class="contenedor-2 row d-flex col-lg-12 col-md-10 col-sm-12 mx-auto">
-        <div class="contenedor" style="background-color: rgb(141, 177, 58);">
-            <div class="row d-flex">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                    <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="200">
+    <!--Contenedor nuestros valores-->
+    <div class="contenedor-valores row d-flex justify-content-center col-lg-12 col-md-12 col-sm-12 mx-auto">
+        <div class="row g-4">
+            <h2>VALORES</h2>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card tarjeta-resp">
+                    <i class="icono-valores fa-solid fa-hand-holding-heart fa-5x"></i>
+                    <div class="texto-tarjeta-valores card-body">
+                        <h5 class="card-title">COMPASIÓN</h5>
+                        <p class="card-text">Actuamos con empatía y comprensión hacia las difíciles circunstancias de
+                            los niños y adolescentes.</p>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6">
-                    <h5>Nuestro Propósito</h5>
-                    
-                    <p>Nuestro propósito en ZUMATE es transformar la vida de los niños más vulnerables de Perú mediante
-                        programas de donaciones y campañas solidarias.</p>
-                    <a class="btn btn-success" href="/Programa.html">Leer más</a>
-                </div> 
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card tarjeta-resp">
+                    <i class="icono-valores fa-solid fa-handshake fa-5x"></i>
+                    <div class="texto-tarjeta-valores card-body">
+                        <h5 class="card-title">COMPROMISO</h5>
+                        <p class="card-text">Nos dedicamos incansablemente a mejorar la calidad de vida de los jóvenes y
+                            sus familias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="card tarjeta-resp">
+                    <i class="icono-valores fa-solid fa-people-roof fa-5x"></i>
+                    <div class="texto-tarjeta-valores card-body">
+                        <h5 class="card-title">INTEGRIDAD</h5>
+                        <p class="card-text">Mantenemos altos estándares éticos en todas nuestras acciones y decisiones.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-1 justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card tarjeta-resp">
+                    <i class="icono-valores fa-solid fa-user-group fa-5x"></i>
+                    <div class="texto-tarjeta-valores card-body">
+                        <h5 class="card-title">INCLUSIÓN</h5>
+                        <p class="card-text"> Fomentamos un entorno inclusivo que respeta y valora la diversidad en
+                            todas sus formas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                <div class="card tarjeta-resp">
+                    <i class="icono-valores fa-solid fa-group-arrows-rotate fa-5x"></i>
+                    <div class="texto-tarjeta-valores card-body">
+                        <h5 class="card-title">COLABORACIÓN</h5>
+                        <p class="card-text">Trabajamos en conjunto con comunidades, voluntarios y otras organizaciones
+                            para maximizar nuestro impacto.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <!--Contenedor Noticias-->
     <div class="contenedor-noticias row d-flex justify-content-center col-lg-12 col-md-12 col-sm-12 mx-auto">
-        <p style="font-size: 30px">Noticias</p>
-        <div class="tarjeta col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-            <img src="Imagenes/Inicio/noticia1.png" alt="noticia 1" height="300">
-            <div class="titulo-noticia">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et.</p>
-                <div class="mt-4 col-lg-12 col-md-12 col-sm-12 col-xl-12 mx-auto">
-                    <span>01/01/2024</span>
-                    <a href="#" class=" btn btn-warning p-1" style="font-size: 10px;">Leer más</a>
+        <h2 class="mb-4">NOTICIAS</h4>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="tarjeta-noticias">
+                    <img src="Imagenes/Inicio/noticia1.png" alt="noticia 1">
+                    <div class="texto-tarjeta-noticias card-body mt-3">
+                        <h5 class="card-title">EVENTOS</h5>
+                        <p class="card-text">Publicar información sobre futuros talleres, charlas o actividades sociales que ZUMATE organice.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="tarjeta col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-            <img src="Imagenes/Inicio/noticia2.png" alt="noticia 2" height="300">
-            <div class="titulo-noticia">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et.</p>
-                <div class="mt-4 col-lg-12 col-md-12 col-sm-12 col-xl-12 mx-auto">
-                    <span>01/01/2024</span>
-                    <a href="#" class=" btn btn-warning p-1" style="font-size: 10px;">Leer más</a>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="tarjeta-noticias">
+                    <img src="Imagenes/Inicio/noticia2.png" alt="noticia 2">
+                    <div class="texto-tarjeta-noticias card-body mt-3">
+                        <h5 class="card-title">CAMPAÑAS DE RECAUDACIÓN</h5>
+                        <p class="card-text"> Promover campañas de donación, colaboración con empresas, o iniciativas de voluntariado.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="tarjeta col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-            <img src="Imagenes/Inicio/noticia3.png" alt="noticia 3" height="300">
-            <div class="titulo-noticia">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et.</p>
-                <div class="mt-4 col-lg-12 col-md-12 col-sm-12 col-xl-12 mx-auto">
-                    <span>01/01/2024</span>
-                    <a href="#" class=" btn btn-warning p-1" style="font-size: 10px;">Leer más</a>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+                <div class="tarjeta-noticias">
+                    <img src="Imagenes/Inicio/noticia3.png" alt="noticia 3">
+                    <div class="texto-tarjeta-noticias card-body mt-3">
+                        <h5 class="card-title">TESTIMONIOS</h5>
+                        <p class="card-text">Incluir testimonios de los niños, adolescentes y familias que han sido impactados por ZUMATE, además de entrevistas a voluntarios y colaboradores.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="tarjeta col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-            <img src="Imagenes/Inicio/noticia4.png" alt="noticia 4" height="300">
-            <div class="titulo-noticia">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et.</p>
-                <div class="mt-4 col-lg-12 col-md-12 col-sm-12 col-xl-12 mx-auto">
-                    <span>01/01/2024</span>
-                    <a href="#" class=" btn btn-warning p-1" style="font-size: 10px;">Leer más</a>
-                </div>
+            <div class="row justify-content-center col-lg-12 col-md-12 col-sm-12 col-12 mt-4">
+                <a href="#" class="btn btn-danger" style="width: 200px;">Ver Todas</a>
             </div>
-        </div>
-        <div class="row col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
-            <a href="#" class="btn btn-danger">Ver Todas</a>
-        </div>
     </div>
 
-
-
-
     <!--Pie de Página-->
-    <footer class="bg-dark text-white pt-5 pb-4">
-        <div class="container text-center text-md-start">
+    <footer class="bg-white text-custom pt-5 pb-4" style="color: #5433bf;">
+        <div class="container text-center text-md-start" id="footer-id">
             <div class="row">
                 <!-- Primera columna -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="80">
-                    <p>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
+                <div
+                    class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <img src="Imagenes/Inicio/logo.png" alt="logo zumate" id="footer-logo" height="180">
+
                 </div>
 
                 <!-- Segunda columna -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h5 class="mb-4">Servicios</h5>
+                    <h4 class="mb-4" style="color: #472d9c;"><strong>Servicios</strong></h4>
                     <hr class="mb-4">
                     <p><a class="nav-link" href="#">Contacto</a></p>
                     <p><a class="nav-link" href="#">Noticias</a></p>
                     <p><a class="nav-link" href="#">Opiniones</a></p>
-                    <p><a class="nav-link" href="#">Donar</a></p>
+                    <p><a class="nav-link" href="#">¿Quieres Donar?</a></p>
                     <p><a class="nav-link" href="libro-reclamaciones.html">Libro de reclamaciones</a></p>
                 </div>
 
                 <!-- Tercera columna -->
                 <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                    <p>ZUMATE ONG</p>
+                    <h4 class="mb-4" style="color: #472d9c"><strong>Zumate ONG</strong></h4>
+                    <hr class="mb-4">
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-house-heart-fill" viewBox="0 0 22 22">
@@ -267,6 +304,10 @@
                     </p>
                 </div>
             </div>
+        </div>
+        <!-- Derechos de autor -->
+        <div class="text-center mt-4">
+            <p><br>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
         </div>
     </footer>
 

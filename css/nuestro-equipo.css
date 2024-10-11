@@ -1,0 +1,386 @@
+header{
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+.top-bar {
+    /*colores cambiados*/
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.top-bar a:hover {
+    color: #e8491d;
+}
+.container{
+    flex-grow :1;
+}
+.btn-donar {
+    background-color: #ff3333 !important;
+    color: white !important;
+    padding: 8px 20px;
+    margin: 0px 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    top: 1000px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
+}
+@media (max-width: 1423px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 10px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 10px;
+    }
+}
+@media (max-width: 1133px){
+    
+}
+@media (max-width: 1359px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 25px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 25px;
+    }
+}
+@media (max-width: 1306px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 40px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 40px;
+    }
+}
+@media (max-width: 1266px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 51px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 50px;
+    }
+}
+@media (max-width: 1218px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 66px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 65px;
+    }
+}
+@media (max-width: 1190px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 80px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 80px;
+    }
+}
+@media (max-width: 1158px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 92px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 90px;
+    }
+}
+@media (max-width: 1144px){
+    .ceo-info h2,h3,p {
+        position: relative;
+        right: 15px;
+    }
+    .team-member-h3 {
+        position: relative;
+        bottom: 90px;
+    }
+
+}
+@media (max-width: 1143px){
+    .ceo-info h2,h3 {
+        position: relative;
+        top: 105px;
+    }
+    .ceo-info p {
+        position: relative;
+        top: 20px;
+        font-size: xx-small ;
+    }
+    .contact-button {
+        position: relative;
+        top: 16px;
+        left: 130px;
+    }
+}
+@media (max-width: 991px) {
+    .btn-donar {
+        margin: 20px auto; /* Centrar el botón y añadir margen superior e inferior */
+        display: block; /* Asegúrate de que se comporta como bloque */
+    }
+    .ceo-section {
+        position: relative;
+        top: 300px;
+    }
+    .ceo-container h2 {
+        position: relative;
+        bottom: 800px;
+    }
+}
+/*--------------------------------Informacion------------------------------------*/
+
+/* Contenedor general para la sección del equipo */
+.team-wrapper {
+  position: relative;
+  top: 950px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+/* Sección del CEO */
+.ceo-section {
+    padding: 50px 20px;
+    background-color: #fff;
+}
+.ceo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    bottom: 100px;
+    left: 50px;
+}
+.ceo-image img {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.ceo-info {
+    flex-grow: 1;
+    margin-left: 60px;
+}
+.ceo-info-a {
+    position: relative;
+    bottom: 90px;
+}
+.ceo-info h2 {
+    color: #000000; 
+    font-size: 50px;
+    font-weight: 900;
+}
+.ceo-info h3 {
+    color: #666;
+}
+.ceo-info p {
+    color: #000000;
+    font-size: large;
+    text-align: justify;
+}
+.ce-info-p p{
+    width: 90%;
+}
+.contact-button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+}
+.contact-button:hover {
+    background-color: #d8d8d8;
+}
+/* Sección del Equipo de Trabajo */
+.team-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    
+}
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+/* Estilo de cada miembro del equipo */
+.team-member {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 30%; /* Ajustar el ancho según tu diseño */
+    margin: 20px;
+    position: relative;
+    bottom: 120px;
+}
+.team-member img {
+    width: 100%;
+    height: 65%;
+    border-radius: 20%;
+    margin-bottom: 15px;
+}
+.team-section h2 {
+    color: #000000; 
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    right: 50px;
+    bottom: 160px;   
+}
+.team-section-2 {
+    display: flex;
+    flex: 1;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (opcional) */
+    position: relative;
+    left: 40px;
+}
+.team-member h3 {
+    color: #000000;
+}
+.team-member p {
+    color: #555;
+}
+.team-member .contact-button {
+    margin-top: 10px;
+}
+/*-------- MEDIA QUERIES PARA HACER RESPONSIVE --------*/
+
+@media (max-width: 1423px) {
+    /* Puedes agregar estilos específicos para pantallas más pequeñas aquí */
+}
+
+@media (max-width: 991px) {
+    .btn-donar {
+        margin: 20px auto;
+        display: block;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-bar a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Ajustes para la sección del CEO */
+    .ceo-info-a {
+        top: 1px;
+    }
+
+    .ceo-info-p {
+        top: 100px;
+    }
+
+    .ceo-container {
+        flex-direction: column; /* Cambiar la dirección para pantallas más pequeñas */
+        align-items: center; /* Centrar el contenido */
+        text-align: center; /* Alinear el texto al centro */
+    }
+
+    .ceo-info {
+        margin-left: 0;
+        margin-top: 20px; /* Añadir margen superior */
+    }
+}
+
+@media (max-width: 768px) {
+    .team-wrapper {
+        position: relative;
+        top: 1700px;
+    }
+
+    .ceo-image img {
+        max-width: 100%; /* Asegurar que la imagen no sea demasiado grande en pantallas pequeñas */
+    }
+
+    .team-section h2 {
+        font-size: 40px;
+        text-align: center; /* Centrar el título */
+    }
+
+    .team-container {
+        flex-direction: column; /* Asegura que los miembros del equipo se apilen */
+        gap: 40px;
+    }
+
+    .team-member {
+        width: 100%; /* Cada miembro del equipo ocupará el 100% del ancho */
+    }
+}
+
+@media (max-width: 480px) {
+    .ceo-info h2 {
+        font-size: 30px;
+    }
+
+    .ceo-info h3 {
+        font-size: 18px;
+    }
+
+    .ceo-info p {
+        font-size: small;
+    }
+
+    .team-member img {
+        width: 80px; /* Ajustar tamaño de la imagen en pantallas pequeñas */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .team-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* Agregar media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .team-container {
+        flex-direction: column; /* Asegura que los miembros del equipo se apilen */
+        gap: 20px; /* Espacio entre los miembros del equipo */
+    }
+}

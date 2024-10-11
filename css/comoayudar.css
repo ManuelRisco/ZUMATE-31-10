@@ -11,8 +11,7 @@ body {
 
 /* --- Header --- */
 header {
-    background: linear-gradient(45deg, #5433bf, #e8491d);
-    color: #ffffff;
+    
     top: 0;
     left: 0;
     width: 100%;
@@ -22,6 +21,7 @@ header {
 
 /* Barra superior */
 .top-bar {
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -157,16 +157,17 @@ h2 {
     text-align: center; /* Alinear el texto al centro */
 }
 .btn-donar {
-    background-color: #ff3333;
-    color: white;
+    background-color: #ff3333 !important;
+    color: white !important;
     padding: 8px 20px;
-    margin: 5px 30px;
+    margin: 0px 30px;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+    transition: all 400ms ease;
+  }
 
 /* --- Footer --- */
 footer {
@@ -432,7 +433,23 @@ footer .footer-content .social-links a:hover {
             }
     }
 
-
+/*No olvidar navbar*/
+@media(max-width: 1200px){
+    .btn.donar {
+        width: 10;
+    }
+  }
+  
+  /*media para logo footer*/
+  @media (max-width: 767px) {
+    #footer-id {
+        position: relative;
+        bottom: 25px;
+    }
+    #footer-logo  {
+        height: 150px;
+    }
+  }
 
 /* Estilos para el modal */
 .modal {

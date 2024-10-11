@@ -15,23 +15,66 @@ header{
   position: fixed;
 }
 
-/* Estilo para la barra superior */
+/*------------------*/
 .top-bar {
-    background: linear-gradient(45deg, #5433bf, #e8491d);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
+  /*colores cambiados*/
+  background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  
 }
 
+/*No olvidar navbar*/
+@media(max-width: 1200px){
+  .btn.donar {
+      width: 10;
+  }
+}
+
+/*media para logo footer*/
+@media (max-width: 767px) {
+  #footer-id {
+      position: relative;
+      bottom: 25px;
+  }
+  #footer-logo  {
+      height: 150px;
+  }
+}
+
+.btn-donar {
+  background-color: #ff3333 !important;
+  color: white !important;
+  padding: 8px 20px;
+  margin: 0px 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+footer{
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  position: relative;
+  top: 200px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
+}
 .top-bar a {
   color: #ffffff;
   text-decoration: none;
   margin-left: 20px;
   font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra hacia abajo */
+
 }
+
+/*------------------*/
 
 .top-bar a:hover {
   color: #e8491d;
@@ -143,29 +186,13 @@ input[type="radio"] {
   flex-grow :1;
 }
 
-footer{
-  width: 100%;
-  position: relative;
-  margin-top: auto;
-  position: relative;
-  top: 200px;
-}
+
 
 .no-scroll {
     overflow: hidden; /* Desactiva el desplazamiento */
 }
 
-.btn-donar {
-    background-color: #ff3333;
-    color: white;
-    padding: 8px 20px;
-    margin: 0px 30px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 .btn-donar:hover {
     background-color: #e30f0f; /* Color más oscuro al pasar el cursor */
 }
@@ -178,7 +205,7 @@ footer{
 @media (max-width: 319px) {
     form {
         position: relative;
-        top: 220px; /* Aumenta este valor para bajar más el formulario */
+        top: 220px; 
     }
 }
 @media (max-width: 768px) {
@@ -190,7 +217,7 @@ footer{
 @media (max-width: 993px) {
     form {
         position: relative;
-        top: 190px; /* Aumenta este valor para bajar más el formulario */
+        top: 190px; 
     }
 }
 
