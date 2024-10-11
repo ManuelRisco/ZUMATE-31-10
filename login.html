@@ -32,79 +32,71 @@
                     <a href="./login.html">Iniciar Sesión</a>
                 </div>
                 <div>
-                    <a href="#">Redes Sociales:</a>
-                    <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/zumateong/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="d-none d-sm-inline">Redes Sociales:</a>
+                    <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"
+                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"
+                        aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/zumateong/" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank"
-                    aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                        aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
         <!--Navbar-->
         <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container col-lg-12 col-md-12 col-sm-12 mx-auto">
-                <!--Logo-->
-                <img src="Imagenes/Login/logo.png" alt="logo zumate" height="70">
-    
-                <!--Boton responsive-->
-                <button class="navbar-toggler shadow-none border-0" 
-                        type="button" 
-                        data-bs-toggle="offcanvas" 
-                        data-bs-target="#offcanvasNavbar"
-                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <!--Barra lateral-->
-                <div class="sidebar offcanvas offcanvas-start" 
-                    tabindex="-1" 
-                    id="offcanvasNavbar" 
-                    aria-labelledby="offcanvasNavbarLabel"
-                >
-    
-                    <!--Cabecera barra lateral-->
+            <div class="container-fluid">
+                <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="70">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" 
-                        id="offcanvasNavbarLabel">Menú</h5>
-    
-                        <button 
-                            type="button" 
-                            class="btn-close" 
-                            data-bs-dismiss="offcanvas" 
-                            aria-label="Close"
-                        ></button>
-    
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body col-lg-12 col-md-8 col-sm-12 mx-auto">
+                    <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="SobreNosotros.html">Sobre Nosotros</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Sobre Nosotros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./SobreNosotros.html">¿Quienes somos?</a></li>
+                                    <li><a class="dropdown-item" href="./nuestroequipo.html">Nuestro equipo</a></li>
+                                    <li><a class="dropdown-item" href="./alianzas.html">Alianzas</a></li>
+                                </ul>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Programa.html">Programa</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Programas
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./Programa1.html">Programa1</a></li>
+                                    <li><a class="dropdown-item" href="./Programa2.html">Programa2</a></li>
+                                    <li><a class="dropdown-item" href="./Programa3.html">Programa2</a></li>
+                                    <li><a class="dropdown-item" href="./Programa4.html">Programa4</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./como-ayudar.html">¿Como ayudar?</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                            <li class="nav-item"></li>
-                                <a class="btn-donar" href="./donar.html">Donar</a>
-                            </li>
                         </ul>
                     </div>
                 </div>
+                <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
-        </header>
+    </header>
 
 
     <div class="container w-75 mt-5">
