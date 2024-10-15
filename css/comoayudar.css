@@ -1,33 +1,19 @@
-
-/* Estilos Generales */
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    color: #333333;
-    background-color: #eae7f0;
-}
-
-
-/* --- Header --- */
-header {
-    
+header{
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
 }
 
-/* Barra superior */
+/*Primera barra informativa*/
 .top-bar {
+    /*colores cambiados*/
     background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .top-bar a {
@@ -37,411 +23,71 @@ header {
     font-weight: 500;
 }
 
-.top-bar a:hover {
-    color: #e8491d;
-}
 
-/* Barra de menú */
-.menu-bar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alineado a la derecha */
-    width: 100%;
-    padding: 1% 20px;
-}
+/*Barra de navegación*/
 
-.logo img {
-    width: 70px;
-    height: auto;
-    border-radius: 50%;
-}
-
-nav {
-    margin-left: auto;
-    padding: 0 20px;
-}
-
-.menu-bar a {
-    color: #5433bf;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: 500;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
-    margin: 0 10px;
-}
-
-.menu-bar a:hover {
-    background: #5433bf;
-    color: #ffffff;
-}
-
-h2 {
+.nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin: 20px 0; /* Aumenta el margen para que no se mueva hacia arriba */
-    font-weight: bold;
-    color: #5433bf; /* Color igual a h2 */
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
 }
 
-
-.other-ways h3 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
-    color: #5433bf;
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Estilos del modal */
-.modal {
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Fijo en la pantalla */
-    z-index: 1; /* Encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
-}
-
-.modal-content {
-    background-color: #ffffff;
-    margin: 15% auto; /* Centrado */
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    position: relative;
-}
-
-.modal-content a {
-    display: inline-block; /* Cambiado a inline-block para que se alineen en fila */
-    color: #5433bf;
-    text-decoration: none;
-    margin: 10px; /* Espacio entre los iconos */
-    font-size: 18px;
-}
-
-.modal-content a img {
-    width: 30px; /* Tamaño de los iconos */
-    height: 30px; /* Tamaño de los iconos */
-    vertical-align: middle; /* Alineación vertical */
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: #ff4d4d; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Esquinas redondeadas */
-    padding: 5px 10px; /* Espaciado interno */
-    transition: background-color 0.3s; /* Transición suave */
-}
-
-.close:hover {
-    background-color: #ff1a1a; /* Color al pasar el mouse */
-}
-
-/* Estilos de las tarjetas */
-.help-card {
-    background-color: #f9f9f9; /* Color de fondo */
-    border: 1px solid #ddd; /* Borde de las tarjetas */
-    border-radius: 8px; /* Esquinas redondeadas */
-    padding: 15px; /* Espaciado interno */
-    margin: 15px; /* Margen entre tarjetas */
-    flex: 1; /* Ocupa el espacio disponible */
-    max-width: 450px; /* Ancho máximo de la tarjeta */
-    text-align: center; /* Alinear el texto al centro */
-}
 .btn-donar {
-    background-color: #ff3333 !important;
-    color: white !important;
+    background-color: #ff3333;
+    color: white;
     padding: 8px 20px;
-    margin: 0px 30px;
     text-decoration: none;
-    text-align: center;
     font-size: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
-  }
+}
 
-/* --- Footer --- */
-footer {
-    background: #212429;
-    color: #ffffff;
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    background-color: #5056e9;
+}
+
+
+/*Apartado como ayudar*/
+
+.como-ayudar-container{
+    width: 100%;
+    padding: 18% 5% 5% 5%;
+    height: auto;
+    background-color: #0cc0df;
+}
+
+.item-como-ayudar{
+    width: auto;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
     text-align: center;
-    padding: 40px 20px;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
-
-}
-
-footer .footer-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer .footer-services a {
-    color: #ffffff;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-footer .footer-services a:hover {
-    color: #e8491d;
-    text-decoration: underline;
-}
-
-/* Enlaces sociales del footer */
-footer .footer-content .social-links a {
-    color: #ffffff;
-    margin: 0 10px;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-}
-
-footer .footer-content .social-links a:hover {
-    color: #e8491d;
-}
-
-/* Mostrar menú desplegable al pasar el mouse */
-.menu-item:hover .dropdown-content {
-    display: block;
-}
-
-.menu-item i {
-    margin-left: 5px;
-}
-
-/* --- Sección ¿Cómo Ayudar? --- */
-.help-section {
-    text-align: justify;
-    position: inherit;
-    margin: 0;
+    margin: 10px;
 }
 
 
-.help-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #5433bf;
+/*Pié de páginas*/
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
 }
 
-.help-section p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-    color: #666;
-}
-
-.help-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.help-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    flex: 1;
-    min-width: 250px; /* Asegura que las tarjetas no se vuelvan demasiado estrechas */
-}
-
-.help-card h3 {
-    color: #5433bf;
-    margin: 15px 0;
-}
-
-.help-card p {
-    color: #666;
-}
-
-.help-card .btn {
-    display: inline-block;
-    background-color: #5433bf;
-    color: #ffffff;
-    padding: 10px 20px;
-    margin: 20px 0;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-.help-card .btn:hover {
-    background-color: #e8491d;
-}
-.help-card {
-    text-align: center; /* Centra el texto dentro del contenedor */
-    transition: transform 0.3s ease; /* Añadir la transición para el efecto de escalado */
-}
-
-.help-card:hover {
-    transform: scale(1.05); /* Aumentar el tamaño del contenedor al pasar el cursor */
-}
-
-.help-card .btn {
-    display: inline-block;
-    background-color: #5433bf;
-    color: #ffffff;
-    padding: 10px 20px;
-    margin: 20px 0;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease; /* Solo animar el color de fondo */
-}
-
-.help-card .btn:hover {
-    background-color: #e8491d; /* Cambia el color de fondo al pasar el mouse */
-}
-.help-section {
-    text-align: center; /* Centra el contenido */
-}
-
-.button-container {
-    display: flex; /* Usa flexbox para alinear los botones */
-    justify-content: center; /* Centra los botones horizontalmente */
-    flex-wrap: wrap; /* Permite que los botones se envuelvan a la siguiente línea */
-    margin-bottom: 40px; /* Margen inferior para espacio entre filas */
-}
-
-.help-card {
-    background-color: #f8f9fa; /* Fondo claro para cada tarjeta */
-    border: 1px solid #e0e0e0; /* Borde ligero */
-    border-radius: 10px; /* Esquinas redondeadas */
-    padding: 20px; /* Espaciado interno */
-    margin: 10px; /* Margen entre tarjetas */
-    transition: transform 0.3s ease; /* Transición para el efecto de escala */
-    width: 300px; /* Ancho fijo para los botones */
-}
-
-.help-card:hover {
-    transform: scale(1.05); /* Aumentar el tamaño al pasar el mouse */
-}
-
-.help-card .btn {
-    display: inline-block;
-    background-color: #5433bf; /* Color del botón */
-    color: #ffffff; /* Color del texto del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    margin: 20px 0; /* Margen superior e inferior */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 5px; /* Esquinas redondeadas */
-    transition: background 0.3s ease; /* Animación de color de fondo */
-}
-
-.help-card .btn:hover {
-    background-color: #e8491d; /* Color del botón al pasar el mouse */
-}
-
-.other-ways {
-    margin: 20px 0; /* Margen superior e inferior para el espacio */
-    font-weight: bold; /* Negrita para el texto */
-    font-size: 24px; /* Tamaño de fuente */
-}
-
-.help-card {
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 300px;
-    position: relative; /* Para el posicionamiento del menú desplegable */
-}
-
-.btn {
-    background-color: #5433bf; /* Color del botón */
-    color: #ffffff; /* Color del texto */
-    padding: 10px 15px; /* Espaciado interno del botón */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Esquinas redondeadas */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    text-decoration: none; /* Sin subrayado */
-    display: inline-block; /* Para que funcione correctamente el padding */
-}
-
-.share-dropdown {
-    display: none; /* Inicialmente oculto */
-    position: absolute; /* Para posicionar el menú sobre el contenido */
-    background-color: #ffffff; /* Color de fondo del menú */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del menú */
-    z-index: 1; /* Para asegurarse de que esté encima de otros elementos */
-    min-width: 160px; /* Ancho mínimo del menú */
-    margin-top: 10px; /* Espacio entre el botón y el menú */
-}
-
-.share-dropdown a {
-    color: #5433bf; /* Color de los enlaces */
-    padding: 10px 15px; /* Espaciado interno de los enlaces */
-    text-decoration: none; /* Sin subrayado */
-    display: block; /* Para que cada enlace ocupe toda la fila */
-}
-
-.share-dropdown a:hover {
-    background-color: #f0f0f0; /* Fondo al pasar el mouse */
-}
-
-.button-container {
-    display: flex; /* Usar flexbox para alinear tarjetas */
-    flex-wrap: wrap; /* Permitir que las tarjetas se muevan a la siguiente línea */
-    justify-content: center; /* Centrar tarjetas en el contenedor */
-    
-}
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 2em;
-            }
-
-            .other-ways h3 {
-                font-size: 1.3em;
-            }
-
-            .help-card {
-                flex-basis: 100%; /* Tarjetas ocupan el ancho completo en pantallas pequeñas */
-                max-width: none; /* Elimina el ancho máximo */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .modal-content {
-                width: 90%;
-            }
-
-            .close {
-                font-size: 20px;
-            }
-
-            .modal-content a {
-                font-size: 16px; /* Ajustar tamaño de texto para móvil */
-            }
-        }
-        @media (max-width: 990px){
-
-            .btn-donar {
-                margin: 20px 30px;
-            }
-    }
-
-/*No olvidar navbar*/
-@media(max-width: 1200px){
-    .btn.donar {
-        width: 10;
-    }
-  }
-  
-  /*media para logo footer*/
-  @media (max-width: 767px) {
+/*media para logo footer*/
+@media (max-width: 767px) {
     #footer-id {
         position: relative;
         bottom: 25px;
@@ -449,54 +95,4 @@ footer .footer-content .social-links a:hover {
     #footer-logo  {
         height: 150px;
     }
-  }
-
-/* Estilos para el modal */
-.modal {
-    display: none; /* Oculto por defecto */
-    position: fixed; /* Queda en la pantalla */
-    z-index: 1; /* Se queda encima de otros elementos */
-    left: 0;
-    top: 0;
-    width: 100%; /* Ancho completo */
-    height: 100%; /* Alto completo */
-    overflow: auto; /* Habilitar scroll si es necesario */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
-}
-
-.modal-content {
-    background-color: #fff;
-    margin: 10% auto; /* 10% desde la parte superior y centrado */
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 10px; /* Bordes redondeados */
-    width: 90%; /* Ancho del modal */
-    max-width: 500px; /* Máximo ancho para pantallas grandes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
-    animation: fadeIn 0.5s; /* Animación al abrir */
-}
-
-
-h3 {
-    margin: 0;
-    color: #333; /* Color del título */
-}
-
-ul {
-    padding-left: 20px; /* Sangrado para la lista */
-}
-
-ul li {
-    margin: 5px 0; /* Espaciado entre elementos de la lista */
-}
-
-h4 {
-    margin-top: 15px; /* Espaciado superior para la sección de información */
-    color: #555; /* Color del subtítulo */
-}
-
-/* Animación de entrada */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }

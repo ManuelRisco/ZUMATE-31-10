@@ -10,6 +10,7 @@ body {
     color: #333333;
 }
 
+
 /* --- Header --- */
 header {
     background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
@@ -44,9 +45,6 @@ header {
     transition: color 0.3s ease;
 }
 
-.top-bar a:hover {
-    color: #e8491d;
-}
 
 /* Contenedor principal del menú */
 .menu-bar {
@@ -84,6 +82,21 @@ footer {
     position: relative;
     margin-top: auto;
 
+}
+/*Barra de navegación*/
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .btn-donar {

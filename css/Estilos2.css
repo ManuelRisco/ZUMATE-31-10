@@ -43,10 +43,6 @@ header {
     transition: color 0.3s ease;
 }
 
-.top-bar a:hover {
-    color: #e8491d;
-}
-
 /* Barra de menú */
 .menu-bar {
     display: flex;

@@ -26,10 +26,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.top-bar a:hover {
-    color: #e8491d;
-}
-
 .contenedor {
     padding-bottom: 5%;
 }
