@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>blog</title>
+    <title>Zumate ONG - Blog</title>
     <link rel="icon" href="Imagenes/Zumate.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -31,7 +31,7 @@
                     <a href="./login.html">Iniciar Sesión</a>
                 </div>
                 <div>
-                    <a href="#" class="d-none d-sm-inline">Redes Sociales:</a>
+                    <a class="d-none d-sm-inline">Redes Sociales:</a>
                     <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"
                         aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"
@@ -47,7 +47,7 @@
     
           <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="70">
+                <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="90">
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
@@ -58,25 +58,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sobre Nosotros
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./nuestroequipo.html">Nuestro equipo</a></li>
-                                    <li><a class="dropdown-item" href="./alianzas.html">Organigrama y Alianzas</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="redirectToPrograma()">
-                                    Programas
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./P_Educación_y_Capacitacion.html">Educación y Capacitación</a></li>
-                                    <li><a class="dropdown-item" href="./P_Salud_y_Nutricion.html">Salud y Nutrición</a></li>
-                                    <li><a class="dropdown-item" href="./P_Desarrollo_Cultural.html">Desarrollo Cultural</a></li>
-                                    <li><a class="dropdown-item" href="./P_Prevencion_y_Sensibilizacion.html">Prevención y Sensibilización</a></li>
-                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Programa.html">Programas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./como-ayudar.html">¿Cómo ayudar?</a>
@@ -103,7 +89,7 @@
         <h1 class="text-center mb-5" style="color: #302c7c; font-weight: 900; width: 100%; font-size: 4rem;">BLOG</h1>
         <div class="row justify-content-center">
             <div class="col-md-10 mb-4 d-flex align-items-start">
-                <img src="Imagenes/Blog/blog-referencia.png" class="img-fluid" alt="Título del post 1" style="position: relative; top: 10px; width: 400px; height: 420px; margin-right: 52px; border-radius: 2%;">
+                <img src="Imagenes/Blog/blog-referencia.png" class="img-fluid" alt="Título del post 1" style="object-fit: cover; position: relative; top: 10px; width: 490px; height: 520px; margin-right: 52px; border-radius: 2%;">
                 <div class="card-body" id="card-text-id">
                     <p class="card-text" style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit sollicitudin dignissim ac eget turpis. Duis quis laoreet tellus, eu condimentum mauris. Quisque sed imperdiet lorem. Fusce euismod risus eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis. Aenean elementum et lorem in suscipit. Suspendisse at diam eget quam laoreet viverra.</p>
                     <p class="card-text" style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit sollicitudin dignissim dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus.</p>
@@ -122,11 +108,37 @@
                     </div>    
 
                     <div class="d-flex flex-column align-items-center position-relative">
+                        <!-- Botón de compartir -->
                         <button id="shareButton" type="button" style="border: none; background: none; cursor: pointer;">
                             <i class="fa-solid fa-share-from-square" alt="compartir" style="font-size: 40px; width: 40px; height: auto; position: relative; right: 110px;"></i>
                         </button>
-                        <div id="copyMessage" class="copy-message">¡Enlace copiado!</div>
-                    </div>                   
+                    
+                        <!-- Menú flotante de redes sociales (oculto por defecto) -->
+                        <div id="socialMenu" class="social-menu" style="display: none;">
+                            <div class="social-icons d-flex justify-content-around mt-3" style="position: relative; right: 10px;">
+                                <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank">
+                                    <img class="fa-brands fa-facebook-f" src="Imagenes/Social/facebook.png" alt="Facebook" style="font-size: 20px; color: #3b5998; width: 30px;" >
+                                </a>
+
+                                <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank">
+                                    <img class="fa-brands fa-tiktok" src="Imagenes/Social/Tiktok.png" alt="Tiktok" style="font-size: 20px; color: #3b5998; width: 30px;" >
+                                </a>
+
+
+                                <a href="https://www.instagram.com/zumateong/" target="_blank">
+                                    <img class="fa-brands fa-instagram" src="Imagenes/Social/instagram.png" alt="Instagram" style="font-size: 20px; color: #3b5998; width: 30px;" >
+                                </a>
+                                
+
+                                <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank">
+                                    <img class="fa-brands fa-linkedin" src="Imagenes/Social/Linkedin.png" alt="Linkedin" style="font-size: 20px; color: #3b5998; width: 40px; position: relative; bottom: 5px;" >
+                                </a>
+
+                            </div>
+                            <button id="closeMenu" style="border: none; background: none; cursor: pointer; color: red; font-size: 18px; margin-bottom: 30px;">X</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -138,7 +150,7 @@
                 <h5 class="card-parrafo">Dejar opinión</h5>
             </div>
             <div style="text-align: center;">
-                <h5 class="card-parrafo">Compartir enlace</h5>
+                <h5 class="card-parrafo">Compartir redes</h5>
             </div>
         </div>
     </div>
@@ -186,28 +198,33 @@
 </div>   
 
 <div class="chatbot-container">
-    <!-- Botón para abrir el chatbot -->
-    <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
-
-    <!-- Ventana del chatbot -->
-    <div id="chat-window" class="chat-window hidden">
-        <div class="chat-header">
-            <h2>Bienvenido a la ONG ZUMATE</h2>
-            <p>¿Cómo podemos ayudarte?</p>
-            <button id="close-chatbot" class="close-btn">X</button>
+    <div style="display: flex; flex-direction: row; z-index: 1001;">
+            <a href="https:wa.me/917365659" target="_blank" style="position: relative; right: 30px;">
+                <img src="Imagenes/Social/whatsapp.png" alt="Whatsapp" style="width: 50px; height: 50px;">
+            </a>
+        
+        <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
+        
+        <!-- Ventana del chatbot -->
+        <div id="chat-window" class="chat-window hidden">
+            <div class="chat-header">
+                <h2>Bienvenido a la ONG ZUMATE</h2>
+                <p>¿Cómo podemos ayudarte?</p>
+                <button id="close-chatbot" class="close-btn">X</button>
+            </div>
+            <div class="chat-body">
+                <p>Para resolver tus dudas, elige una de estas opciones:</p>
+                <!-- Opciones del chatbot en forma de botones -->
+                <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
+                <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
+                <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
+                <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
+                <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
+            </div>
+            <div id="chat-response" class="chat-response"></div>
         </div>
-        <div class="chat-body">
-            <p>Para resolver tus dudas, elige una de estas opciones:</p>
-            <!-- Opciones del chatbot en forma de botones -->
-            <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
-            <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
-            <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
-            <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
-            <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
-        </div>
-        <div id="chat-response" class="chat-response"></div>
     </div>
-</div>
+</div>    
     
     
     <!--Pie de Página-->
@@ -225,11 +242,11 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h4 class="mb-4" style="color: #472d9c;"><strong>Servicios</strong></h4>
                     <hr class="mb-4">
-                    <p><a class="nav-link" href="#">Contacto</a></p>
-                    <p><a class="nav-link" href="#">Noticias</a></p>
-                    <p><a class="nav-link" href="#">Opiniones</a></p>
-                    <p><a class="nav-link" href="#">¿Quieres Donar?</a></p>
-                    <p><a class="nav-link" href="libro-reclamaciones.html">Libro de reclamaciones</a></p>
+                    <p><a class="nav-link" href="nuestroequipo.html">Contacto</a></p>
+                    <p><a class="nav-link" href="index.html">Noticias</a></p>
+                    <p><a class="nav-link" href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Opiniones</a></p>
+                    <p><a class="nav-link" href="donar.html">¿Quieres Donar?</a></p>
+                    <p><a class="nav-link" href="https://forms.gle/bizL7dFcPYtXMMZAA" target="_blank">Libro de reclamaciones</a></p>
                 </div>
 
                 <!-- Tercera columna -->
@@ -277,21 +294,18 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 
+    <!-- JavaScript para manejar el evento de mostrar y cerrar el menú flotante -->
     <script>
-        document.getElementById('shareButton').addEventListener('click', function() {
-            const urlToCopy = window.location.href;
-        
-            navigator.clipboard.writeText(urlToCopy).then(() => {
-                const message = document.getElementById('copyMessage');
-                message.classList.add('show');
-                setTimeout(() => {
-                    message.classList.remove('show');
-                }, 2000);
-            }).catch(err => {
-                console.error('Error al copiar al portapapeles: ', err);
-            });
-        });
-        
-        </script>
+    document.getElementById('shareButton').addEventListener('click', function() {
+        const socialMenu = document.getElementById('socialMenu');
+        socialMenu.style.display = 'block';
+    });
+
+    // Evento para cerrar el menú flotante cuando se hace clic en la X
+    document.getElementById('closeMenu').addEventListener('click', function() {
+        const socialMenu = document.getElementById('socialMenu');
+        socialMenu.style.display = 'none';
+    });
+</script>
 </body>
 </html>

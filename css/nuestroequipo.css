@@ -7,19 +7,23 @@
     padding: 10px 20px;
     width: 100%;
 }
+html, body {
+    overflow-x: hidden;
+}
 .top-bar a {
     color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
 }
+
 .btn-donar {
-    background-color: #ff3333 !important;
-    color: white !important;
+    background-color: #ff3333;
+    color: white;
     padding: 8px 20px;
-    margin: 0px 30px;
+
     text-decoration: none;
-    text-align: center;
+
     font-size: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -29,6 +33,7 @@
 .btn-donar:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
+    background-color: #5056e9;
 }
 footer{
     width: 100%;
@@ -58,101 +63,283 @@ header{
     z-index: 1000;
     position: fixed;
 }
-@media (max-width: 767px){
-    #contenedor-ceo {
-        right: 35px;
-    }
-    #contenedor-ceo img {
-        position: relative;
-        left: 35px;
-    }
-    #contenedor-equipo img {
-        position: relative;
-        left: 5px;
-        width: 40%;
-    }
-    #id-team-member2 {
-        position: relative;
-        top: 30px;
-    }
-    #id-team-member3 {
-        position: relative;
-        top: 50px;
-    }
+html, body {
+    height: 100%; /* Asegúrate de que el html y body ocupen el 100% de la altura */
+    margin: 0; /* Elimina el margen predeterminado */
 }
-@media (max-width: 595px){
+
+
+.contenedor-principal {
+    position: relative; /* Asegúrate de que el contenedor tenga un contexto de posicionamiento */
+    overflow: hidden; /* Asegúrate de que el contenido no se desborde */
+    left: 220px;
     
 }
-@media (max-width: 315px){
-    #contenedor-ceo img {
-        width: 70%;
-    }
-    #contenedor-equipo img {
-        height: 35%;
-        position: relative;
-        top: 20px;
-    }
-    #contenedro-equipo h2,h4,p {
-        position: relative;
-        top: 20px;
-    }
-}
-@media (max-width: 991px){
-    #contenedor-ceo-texto{
-        position: relative;
-        top: 20px;
-        left: 50px;
-    }
-}
-#contenedor-cuerpo {
-height: 1100px; 
+
+button:hover {
+    background-color: #ff1d06; /* Color del botón al pasar el ratón */
 }
 
-#contenedor-ceo {
+.contenedor-1-descripcion::before {
+    content: ""; /* Pseudo-elemento vacío */
+    position: absolute; /* Posicionarlo absolutamente */
+    top: -100px; /* Alinear en la parte superior */
+    left: -90px; /* Extender hacia la izquierda */
+    right: -200px; /* Extender hacia la derecha */
+    bottom: -120px; /* Extender hacia la parte inferior */
+    background: rgb(12, 192, 223); /* Color de fondo deseado */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+.contenedor-1 {
+    display: flex; /* Usa flexbox para alinear los elementos en fila */
+    align-items: center; /* Alinea verticalmente en el centro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin-top: 160px; /* Agrega un margen superior para empujar el contenedor hacia abajo */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+.contenedor-1-imagen {
+    margin-left: 120px; /* Espaciado entre la imagen y el texto */
+}
+.contenedor-1-imagen img {
+    border-radius: 40% 40% 0 0;
     position: relative;
-    top: 140px;
+    right: 100px;
 }
-#contenedor-equipo {
+
+.contenedor-1-total {
+    display: flex; /* Alinear el texto en fila */
+    flex-direction: column; /* Mantener el texto en una columna */
+    width: 80vh;
     position: relative;
-    top: 140px;
+    left: 80px;
 }
-@media (max-width: 767px){
-    #contenedor-cuerpo {
-        height: 2200px; 
-        }
 
-}
-@media (max-width: 375px){
-    #id-team-member2 {
-        position: relative;
-        top: 40px;
-    }
-    #id-team-member3 {
-        position: relative;
-        top:70px;
-    }
+.contenedor-1-nombre {
+    color: #000000; /* Color del texto para el nombre */
+    font-size: 24px; /* Tamaño de fuente del nombre */
+    font-weight: bold; /* Negrita */
+
 }
 
 
-
-
-
-
-
-/**/
-.ceo-img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 15px; /* Imagen no tan redonda */
+.contenedor-1-fundador {
+    color: #000000; /* Color del texto para el fundador */
+    font-size: 18px; /* Tamaño de fuente del fundador */
 }
-.team-member img {
-    width: 50%;
-    height: 55%;
-    border-radius: 30%;
+
+.contenedor-1-descripcion {
+    color: #000000; /* Color del texto para la descripción */
+    font-size: 16px; /* Tamaño de fuente de la descripción */
+    margin-top: 10px; /* Espaciado entre la descripción y el fundador */
 }
-.team-member {
-    text-align: center;
+
+.contenedor-contactar {
+    margin-top: 15px; /* Espaciado entre la descripción y el botón */
 }
-.contact-btn {
-    margin-top: 10px;
+
+.button-contactar {
+    background-color: #ff3333; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Efecto de transición para el color */
 }
+
+.contenedor-1-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+    position: relative;
+    bottom: 50px;
+}
+
+.contenedor-1-fundador h2 {
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(100, 102, 114);
+    font-kerning: none;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    bottom: 50px;
+}
+
+.contenedor-1-descripcion p {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor-secundario {
+    display: flex;                /* Utiliza flexbox para el alineamiento */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente (opcional, dependiendo de la altura del contenedor) */
+    height: 200px;                /* Ajusta la altura según sea necesario */
+}
+
+.contenedor-2-nombre {
+    text-align: center;           /* Centra el texto dentro del contenedor */
+}
+
+
+.contenedor-2-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+.contenedor-secundario2 img {
+    width: 400px;
+    border-radius: 10%;
+}
+
+.contenedor-secundario2 {
+display: flex;
+flex-direction: row;
+position: relative;
+left: 17%;
+gap: 55px;
+}
+
+
+.contenedor-imagen {
+    width: 20%;
+}
+
+.contenedor-texto1 h1 {
+    font-size: 25px;
+    font-weight: 650;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+}
+
+.contenedor-texto1 {
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+.contenedor-texto1 {
+    font-size: 18px;
+}
+.contenedor-texto1::before {
+    content: ""; /* Pseudo-elemento vacío */
+    position: absolute; /* Posicionarlo absolutamente */
+    top: -20px; /* Alinear en la parte superior */
+    left: -400px; /* Ajustar para que se extienda a la izquierda */
+    right: -400px; /* Ajustar para que se extienda a la derecha */
+    bottom: -40px; /* Alinear en la parte inferior */
+    background: rgb(12, 192, 223); /* Color de fondo que deseas */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+.contenedor-button button{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    border-radius: 15px;
+    height: 40px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.contenedor-terciario {
+    display: flex;                /* Utiliza flexbox para el alineamiento */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente (opcional, dependiendo de la altura del contenedor) */
+    height: 200px;                /* Ajusta la altura según sea necesario */
+}
+
+.contenedor-3-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+
+.contenedor-3-nombre {
+    position: relative;
+    top: 50%;
+}
+.contenedor-terciario3 img {
+    position: relative;
+    left: 18%;
+    top: 10%;
+}
+
+
+
+.contenedor-cuarto {
+    display: flex;                /* Utiliza flexbox para el alineamiento */
+    justify-content: center;      /* Centra horizontalmente */
+    align-items: center;          /* Centra verticalmente (opcional, dependiendo de la altura del contenedor) */
+    height: 200px;                /* Ajusta la altura según sea necesario */
+}
+.contenedor-4-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+.contenedor-4-nombre {
+    position: relative;
+    top: 50%;
+}
+.contenedor-cuaternario4 img {
+    position: relative;
+    left: 18%;
+    top: 10%;
+}
+
+/*Flexbox de los aliados*/
+
+.contenedor-cuaternario4-IMG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+    flex-direction: row;
+}
+
+
+
+.contenedor-cuaternario4-aliados img {
+    width: 10%;
+}
+
+.contenedor-cuaternario4-aliados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    position: relative;
+    top: 40px;
+    right: 20px;
+}
+

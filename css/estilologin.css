@@ -1,12 +1,13 @@
 
+/*Primera barra informativa*/
 .top-bar {
-    background: linear-gradient(45deg, #5433bf, #e8491d);
+    /*colores cambiados*/
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 10px 20px;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .top-bar a {

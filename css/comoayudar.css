@@ -96,3 +96,58 @@ footer{
         height: 150px;
     }
 }
+@media (max-width: 767px) {
+    .title {
+        font-size: 6em; /* Tamaño de fuente reducido para móviles */
+    }
+}
+
+
+/*Contenido*/
+
+.title {
+    font-size: 4.0em; /* Tamaño de la fuente */
+    color: black; /* Color del texto */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin: 60px 0; /* Margen superior e inferior */
+    text-align: center; /* Centra el título */
+    z-index: 10; 
+    position: relative; 
+    right:9%;
+    font-weight: 900; /* Ajusta el grosor del texto */
+}
+
+.opciones-como-ayudar {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    justify-content: space-between; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan si hay poco espacio */
+}
+
+.item-como-ayudar {
+    width: 48%; /* Asegúrate de que quepan dos en una fila */
+    height: 250px; /* Ajusta la altura a 250px para imágenes más grandes */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    border-radius: 10px; /* Borde redondeado si lo deseas */
+    display: flex; /* Flexbox para centrar la imagen */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.item-como-ayudar img {
+    width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+    height: 100%; /* Altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.parrafo1 {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 160%;
+    text-align: flex;
+    font-kerning: none;
+    text-decoration: none;
+    width: 60%;
+    position: relative;
+    left: 8%;
+}

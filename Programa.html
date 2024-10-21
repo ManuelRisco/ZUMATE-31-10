@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zumate ONG</title>
+    <title>Zumate ONG - Programas</title>
     <link rel="icon" href="Imagenes/Zumate.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/EstiloPrograma.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,7 +23,7 @@
                     <a href="./login.html">Iniciar Sesión</a>
                 </div>
                 <div>
-                    <a href="#" class="d-none d-sm-inline">Redes Sociales:</a>
+                    <a class="d-none d-sm-inline">Redes Sociales:</a>
                     <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"
                         aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"
@@ -35,114 +35,149 @@
                 </div>
             </div>
         </div>
-          <!--Navbar-->
+        <!--Navbar-->
     
-          <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
-                <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="70">
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Sobre Nosotros
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./nuestroequipo.html">Nuestro equipo</a></li>
-                                    <li><a class="dropdown-item" href="./alianzas.html">Organigrama y Alianzas</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" onclick="redirectToPrograma()">
-                                    Programas
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="./P_Educación_y_Capacitacion.html">Educación y Capacitación</a></li>
-                                    <li><a class="dropdown-item" href="./P_Salud_y_Nutricion.html">Salud y Nutrición</a></li>
-                                    <li><a class="dropdown-item" href="./P_Desarrollo_Cultural.html">Desarrollo Cultural</a></li>
-                                    <li><a class="dropdown-item" href="./P_Prevencion_y_Sensibilizacion.html">Prevención y Sensibilización</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./como-ayudar.html">¿Cómo ayudar?</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog</a>
-                            </li>
-                        </ul>
-                    </div>
+     <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="90">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Programa.html">Programas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./como-ayudar.html">¿Cómo ayudar?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav>
+            <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
 
 
-    </header>
+</header>
 
         <!--Cuerpo de página-->
         <div class="container programs-section">
             <h2 class="title">PROGRAMAS</h2>
             <div class="row mt-4">
                 <div class="col-md-6 mb-4">
-                    <div class="program-card">
-                        <img src="Imagenes/Programa/Educacion.jpg" alt="Programa 1">
-                        <a href="P_Educación_y_Capacitacion.html" class="btn">EDUCACIÓN Y CAPACITACIÓN</a>
+                    <div class="program-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Imagenes/Programa/Educacion.jpg" alt="Programa 1">
+                                <div class="btn">EDUCACIÓN Y CAPACITACIÓN</div>
+                            </div>
+                            <div class="card-back">
+                                <h2>EDUCACIÓN  Y CAPACITACIÓN</h2>
+                                <p>Programas de refuerzo escolar, talleres de habilidades para la vida, capacitación
+                                    vocacional y temas emergentes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="program-card">
-                        <img src="Imagenes/Programa/Salud y nutricion.png" alt="Programa 2">
-                        <a href="P_Salud_y_Nutricion.html" class="btn">SALÚD Y NUTRICIÓN</a>
+                    <div class="program-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Imagenes/Programa/Salud y nutricion.png" alt="Programa 2">
+                                <div class="btn">SALÚD Y NUTRICIÓN</div>
+                            </div>
+                            <div class="card-back">
+                                <h2>SALUD Y NUTRICIÓN</h2>
+                                <p>Iniciativas de salud preventiva y programas de nutrición en escuelas públicas,
+                                    municipios  y comedores populares.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="program-card">
-                        <img src="Imagenes/Programa/Desarrollo Cultural.jpg" alt="Programa 3">
-                        <a href="P_Desarrollo_Cultural.html" class="btn">DESARROLLO CULTURAL</a>
+                    <div class="program-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Imagenes/Programa/Desarrollo Cultural.jpg" alt="Programa 3">
+                                <div class="btn">DESARROLLO CULTURAL</div>
+                            </div>
+                            <div class="card-back">
+                                <h2>DESARROLLO CULTURAL</h2>
+                                <p>Actividades culturales, artísticas y recreativas que fomentan el Desarrollo
+                                    integral de niños y adolescentes.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="program-card">
-                        <img src="Imagenes/Programa/Prevencion.jpg" alt="Programa 4">
-                        <a href="P_Prevencion_y_Sensibilizacion.html" class="btn">PREVENCIÓN Y SENSIBILIZACIÓN</a>
+                    <div class="program-card" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="Imagenes/Programa/Prevencion.jpg" alt="Programa 4">
+                                <div class="btn">PREVENCION Y SENSIBILIZACION</div>
+                            </div>
+                            <div class="card-back">
+                                <h2>PREVENCION Y SENSIBILIZACION</h2>
+                                <p>Camapañas de sensibilización sobre los riesgos de pandillaje, drogadicción, embarazo
+                                    adolescente, deserción escolar y desnutrición.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
 
         <div class="chatbot-container">
-            <!-- Botón para abrir el chatbot -->
-            <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
-    
-            <!-- Ventana del chatbot -->
-            <div id="chat-window" class="chat-window hidden">
-                <div class="chat-header">
-                    <h2>Bienvenido a la ONG ZUMATE</h2>
-                    <p>¿Cómo podemos ayudarte?</p>
-                    <button id="close-chatbot" class="close-btn">X</button>
+            <div style="display: flex; flex-direction: row; z-index: 1001;">
+                    <a href="https:wa.me/917365659" target="_blank" style="position: relative; right: 30px;">
+                        <img src="Imagenes/Social/whatsapp.png" alt="Whatsapp" style="width: 50px; height: 50px;">
+                    </a>
+                
+                <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
+                
+                <!-- Ventana del chatbot -->
+                <div id="chat-window" class="chat-window hidden">
+                    <div class="chat-header">
+                        <h2>Bienvenido a la ONG ZUMATE</h2>
+                        <p>¿Cómo podemos ayudarte?</p>
+                        <button id="close-chatbot" class="close-btn">X</button>
+                    </div>
+                    <div class="chat-body">
+                        <p>Para resolver tus dudas, elige una de estas opciones:</p>
+                        <!-- Opciones del chatbot en forma de botones -->
+                        <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
+                        <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
+                        <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
+                        <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
+                        <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
+                    </div>
+                    <div id="chat-response" class="chat-response"></div>
                 </div>
-                <div class="chat-body">
-                    <p>Para resolver tus dudas, elige una de estas opciones:</p>
-                    <!-- Opciones del chatbot en forma de botones -->
-                    <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
-                    <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
-                    <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
-                    <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
-                    <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
-                </div>
-                <div id="chat-response" class="chat-response"></div>
             </div>
-        </div>
+        </div>    
+
+
+        
  <!--Pie de Página-->
  <footer class="bg-white text-custom pt-5 pb-4" style="color: #5433bf;">
     <div class="container text-center text-md-start" id="footer-id">
@@ -154,16 +189,16 @@
 
             </div>
 
-            <!-- Segunda columna -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h4 class="mb-4" style="color: #472d9c;"><strong>Servicios</strong></h4>
-                <hr class="mb-4">
-                <p><a class="nav-link" href="#">Contacto</a></p>
-                <p><a class="nav-link" href="#">Noticias</a></p>
-                <p><a class="nav-link" href="#">Opiniones</a></p>
-                <p><a class="nav-link" href="#">¿Quieres Donar?</a></p>
-                <p><a class="nav-link" href="libro-reclamaciones.html">Libro de reclamaciones</a></p>
-            </div>
+                <!-- Segunda columna -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h4 class="mb-4" style="color: #472d9c;"><strong>Servicios</strong></h4>
+                    <hr class="mb-4">
+                    <p><a class="nav-link" href="nuestroequipo.html">Contacto</a></p>
+                    <p><a class="nav-link" href="index.html">Noticias</a></p>
+                    <p><a class="nav-link" href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Opiniones</a></p>
+                    <p><a class="nav-link" href="donar.html">¿Quieres Donar?</a></p>
+                    <p><a class="nav-link" href="https://forms.gle/bizL7dFcPYtXMMZAA" target="_blank">Libro de reclamaciones</a></p>
+                </div>
 
             <!-- Tercera columna -->
             <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
@@ -203,7 +238,13 @@
         <p><br>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
     </div>
 </footer>
+
 <script src="js/chatbot.js"></script>
+<script>
+    function flipCard(card) {
+        card.classList.toggle('flipped');
+    }
+</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>

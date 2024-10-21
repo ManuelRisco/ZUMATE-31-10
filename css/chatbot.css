@@ -23,12 +23,12 @@
 .chat-window {
     font-family: 'Arial', sans-serif; /* Cambia la fuente principal solo en el chat */
     width: 300px;
-    height: 500px; /* Limitar la altura para evitar que el contenido se salga */
+    height: 546px; /* Limitar la altura para evitar que el contenido se salga */
     background-color: #f1f1f1; /* Fondo del chatbot */
     border: 1px solid #ccc; /* Borde del chatbot */
     border-radius: 10px;
     position: fixed;
-    bottom: 80px;
+    bottom: 0px;
     right: 20px;
     display: flex;
     flex-direction: column;
@@ -114,7 +114,7 @@
     border-top: 1px solid #ccc; /* Borde superior */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    min-height: 50px; /* Altura mínima */
+    min-height: auto; /* Altura mínima */
     overflow-y: auto; /* Permite que la respuesta haga scroll si es necesario */
     opacity: 0; /* Inicialmente oculto */
     transform: translateY(10px); /* Inicialmente desplazado hacia abajo */
@@ -125,4 +125,9 @@
 .chat-response.visible {
     opacity: 1; /* Visibilidad */
     transform: translateY(0); /* Regresar a su posición original */
+}
+
+#close-chatbot:hover {
+    background-color: #ff1d06 !important; /* Color del botón al pasar el ratón */
+
 }

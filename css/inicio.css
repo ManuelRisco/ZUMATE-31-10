@@ -33,21 +33,6 @@ header{
     font-weight: 500;
 }
 
-/*Barra de navegación*/
-
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(0);
-}
-
-.dropdown-menu {
-    display: none;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
 .btn-donar {
     background-color: #ff3333;
@@ -63,7 +48,7 @@ header{
 .btn-donar:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
-    background-color: #5056e9;
+    background-color: #5056e9 ;
 }
 
 

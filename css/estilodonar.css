@@ -1,6 +1,7 @@
-
+/*Primera barra informativa*/
 .top-bar {
-    background: linear-gradient(45deg, #5433bf, #e8491d);
+    /*colores cambiados*/
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -29,32 +30,36 @@
 }
 
 .signin-image img {
-    width: 100%;
-	height: 100%;
+    width: 50%;
+	height: 50%;
 }
 
 #fondo-form{
     background-color: white;
 }
 
+/*Pié de páginas*/
 footer{
     width: 100%;
     position: relative;
-    bottom: auto;
+
     margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
 }
 
 .btn-donar {
     background-color: #ff3333;
     color: white;
     padding: 8px 20px;
-    margin: 0px 30px;
+
     text-decoration: none;
-    text-align: center;
+    
     font-size: 16px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
 }
+
 
 .btn-warning.active {
     background-color: rgb(255, 226, 96) !important;
@@ -65,7 +70,27 @@ footer{
         display: block; /* Asegúrate de que se comporta como bloque */
     }
 }
+@media (max-width: 1624px) {
+    .btn-donar {
+        margin: 20px auto; /* Centrar el botón y añadir margen superior e inferior */
+        display: block; /* Asegúrate de que se comporta como bloque */
+    }
+}
+@media (max-width: 1634px) {
+    .btn-donar {
+        margin: 10px auto; /* Centrar el botón y añadir margen superior e inferior */
+        display: block; /* Asegúrate de que se comporta como bloque */
+    }
+}
 /*Barra de navegación*/
+
+#fondo-form {
+    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+    max-width: 600px; /* Establece un ancho máximo para pantallas más grandes */
+    padding: 2rem; /* Añade espacio interno */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
 
 .nav-item.dropdown:hover .dropdown-menu {
     display: block;
@@ -81,19 +106,39 @@ footer{
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.btn-donar {
-    background-color: #ff3333;
-    color: white;
-    padding: 8px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 400ms ease;
-}
+
 
 .btn-donar:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
     background-color: #5056e9;
+}
+
+.menu-flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegúrate de que esté en el frente */
+}
+
+.menu-flotante img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/*media para logo footer*/
+@media (max-width: 767px) {
+    #footer-id {
+        position: relative;
+        bottom: 25px;
+    }
+    #footer-logo  {
+        height: 150px;
+    }
 }

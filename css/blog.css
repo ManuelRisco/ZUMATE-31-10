@@ -65,21 +65,6 @@ header{
 
 
 
-.copy-message {
-    position: absolute;
-    top: -30px; /* Ajusta esta distancia según sea necesario */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #4741af; /* Fondo verde con algo de transparencia */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px; /* Tamaño de fuente del mensaje */
-    z-index: 999; /* Asegura que el mensaje esté por encima de otros elementos */
-    transition: opacity 0.5s ease; /* Transición suave para el mensaje */
-    opacity: 0; /* Comienza oculto */
-}
-
 
 .icono-articulos{
     text-align: center;
@@ -101,13 +86,6 @@ header{
     height: auto;
     color: white;
     text-align: center;
-}
-
-
-
-
-.copy-message.show {
-    opacity: 1; /* Hace el mensaje visible */
 }
 
 /* Información artículos */
@@ -180,6 +158,40 @@ footer{
 
 @media (max-width: 1177px){
 
+}
+
+
+
+
+.social-menu {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 998;
+    width: 280px; /* Aumenta el tamaño del menú */
+}
+
+#closeMenu {
+    position: absolute;
+    top: 10px; /* Posiciona la X más arriba */
+    right: 10px; /* Posiciona la X a la derecha */
+    font-size: 28px; /* Aumenta el tamaño de la X */
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons i {
+    transition: transform 0.2s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.4); /* Agranda los iconos al hacer hover */
 }
 
 

@@ -1,0 +1,242 @@
+/* Estilos Generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333333;
+}
+
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    background-color: #5056e9;
+}
+/* --- Header --- */
+header {
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra superior */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+/* Contenedor principal del menú */
+.menu-bar {
+    display: flex;
+    justify-content: center; /* Centra el contenido del menú */
+    align-items: center;
+    width: 100%;
+    padding: 1% 20px;
+    background: #ffffff;
+}
+
+/* Logo a la izquierda */
+.logo {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+}
+
+/* Ajustes adicionales para el botón y redes sociales */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Centra los elementos de navegación */
+    flex-grow: 1; /* Asegura que ocupen el espacio necesario */
+}
+
+.navbar {
+    width: 100%;
+}
+/* --- Footer --- */
+footer {
+    background: #212429;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+
+}
+
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+/* Contenedor general */
+.voluntariado {
+    text-align: center;
+    padding: 20px; /* Espacio alrededor */
+}
+
+/* Títulos */
+.title {
+    font-size: 4.5em; 
+    color: #2e2c7f; 
+    text-transform: uppercase; 
+    margin: 60px 0; 
+    font-weight: 800; 
+}
+
+/* Párrafo debajo del título */
+.voluntariado p {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto del párrafo */
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 1000px; /* Opcional: establece un ancho máximo para mejor legibilidad */
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; /* Centra el texto */
+}
+
+/* Subtítulos */
+.subtitle {
+    font-size: 2.0em; 
+    color: #2e2c7f; 
+    text-transform: uppercase; 
+    margin: 40px 0; 
+    font-weight: 800; 
+    
+}
+
+/* Tarjetas */
+.tarjetas-contenido, .tarjetas-eventos {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que las tarjetas se apilen en filas */
+    justify-content: center; /* Centrar tarjetas */
+    gap: 100px; /* Aumentar el espacio entre tarjetas */
+    margin-bottom: 30px;
+}
+
+/* Tarjetas Verdes */
+.tarjeta {
+    flex: 1 1 280px; /* Las tarjetas ocuparán un mínimo de 280px */
+    max-width: 350px; /* Ancho máximo para tarjetas de contenido */
+    height: auto; /* Altura automática para ajustarse al contenido */
+    padding: 20px; 
+    border-radius: 8px;
+    background-color: #81e178; /* Fondo verde para tarjetas */
+    display: flex;
+    flex-direction: column; /* Para apilar contenido verticalmente */
+    justify-content: center; /* Centrar contenido verticalmente */
+}
+
+/* Texto dentro de las tarjetas verdes */
+.tarjeta p {
+    font-size: 0.9rem; /* Tamaño de fuente independiente para el texto de las tarjetas verdes */
+    color: #333; /* Color del texto */
+    max-width: 700px; /* Opcional: establece un ancho máximo para mejor legibilidad */
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; /* Centra el texto */
+    font-weight: 700; 
+}
+
+/* Tarjetas con Imagen */
+.evento {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    flex: 1 1 280px; /* Las tarjetas ocuparán un mínimo de 280px */
+    max-width: 350px; /* Ancho máximo para tarjetas de evento */
+    height: 450px; /* Altura fija para las tarjetas de eventos */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Asegura que el pseudo-elemento no sobresalga */
+}
+.evento::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    border-radius: 8px; /* Asegura que coincida con el borde de la tarjeta */
+    z-index: 1; /* Asegura que se muestre encima del fondo */
+}
+/* Estilo del contenido de las tarjetas */
+.contenido {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative; /* Necesario para que el texto esté encima de la superposición */
+    z-index: 2; /* Asegura que el texto esté encima de la superposición */
+}
+
+.contenedor-boton {
+    padding: 10px; /* Espaciado alrededor */
+    text-align: center; /* Centrar contenido */
+    position: relative; /* Para que el texto no se superponga */
+    z-index: 2; /* Para asegurarse de que el contenido esté visible */
+}
+/* Estilo del botón de registro */
+.button-registro {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    padding: 10px 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    font-weight: bold; 
+}
+
+/* Media Queries para ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3em; /* Ajustar tamaño del título en pantallas pequeñas */
+    }
+
+    .subtitle {
+        font-size: 1.5em; /* Ajustar tamaño del subtítulo en pantallas pequeñas */
+    }
+
+    .voluntariado p {
+        font-size: 1.4rem; /* Ajustar tamaño del texto del párrafo en pantallas pequeñas */
+    }
+
+    .tarjeta, .evento {
+        flex: 1 1 100%; /* Tarjetas ocuparán el 100% del ancho en pantallas muy pequeñas */
+    }
+}
