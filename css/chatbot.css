@@ -1,7 +1,7 @@
 .chatbot-container {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 23px;
+    right: 100px;
     z-index: 2000; /* Asegura que el chatbot esté por delante de otros elementos */
 }
 
@@ -23,13 +23,13 @@
 .chat-window {
     font-family: 'Arial', sans-serif; /* Cambia la fuente principal solo en el chat */
     width: 300px;
-    height: 546px; /* Limitar la altura para evitar que el contenido se salga */
+    height: 500px; /* Limitar la altura para evitar que el contenido se salga */
     background-color: #f1f1f1; /* Fondo del chatbot */
-    border: 1px solid #ccc; /* Borde del chatbot */
+    border: .9px solid #ccc; /* Borde del chatbot */
     border-radius: 10px;
     position: fixed;
-    bottom: 0px;
-    right: 20px;
+    bottom: 110px;
+    right: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,7 +94,7 @@
     background-color: #472d9c; /* Color de fondo del botón */
     color: white; /* Color del texto del botón */
     border: none;
-    padding: 10px;
+    padding: 12px;
     border-radius: 5px;
     cursor: pointer;
     text-align: left;
