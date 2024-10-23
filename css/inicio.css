@@ -161,6 +161,10 @@ header{
     max-height: 30%;
 }
 
+.texto-tarjeta-noticias p{
+    padding: 0 8% 0 8%;
+}
+
 
 /*Pié de páginas*/
 footer{

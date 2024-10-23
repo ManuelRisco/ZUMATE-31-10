@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Imagenes/Zumate.ico" type="image/x-icon">
     <title>Zumate ONG - Nuestro Equipo</title>
-    <link rel="icon" href="Imagenes/Zumate.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/nuestroequipo-estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="stylesheet" href="css/nuestroequipo.css">
-<link rel="stylesheet" href="css/chatbot.css">
-<style>
-    body {
-        display: flex; /* Usar flexbox en el body para centrar el contenido */
-        flex-direction: column; /* Alinear en columna */
-        justify-content: center; /* Centrar verticalmente */
-        min-height: 350vh;        
-    }
-</style>
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/chatbot.css">
 </head>
 <body>
+
     <header>
         <!--Barra superior-->
         <div class="top-bar">
@@ -40,184 +33,159 @@
                 </div>
             </div>
         </div>
-     <!--Navbar-->
+        <!--Navbar-->
     
-     <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="90">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+         <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="90">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Programa.html">Programas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./como-ayudar.html">¿Cómo ayudar?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./Programa.html">Programas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./como-ayudar.html">¿Cómo ayudar?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./blog.html">Blog</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-            <a class="btn-donar" href="./donar.html">ZUMA con nosotros</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
+        </nav>        
+    </header>
 
+    <main class="main">
 
-</header>
-
-    <div class="contenedor-principal-background">
-
-        <div class="contenedor-principal">
-            
-            <div class="contenedor-1">
-                
-                <div class="contenedor-1-imagen">
-                    <img src="Imagenes/Nuestro-Equipo/ceo-referencia.png" alt="">
-                </div>
-                <div class="contenedor-1-total">
-                    <div class="contenedor-1-nombre">
-                        <h1>HAROLD BULLÓN</h1>
-                    </div>
-                    <div class="contenedor-1-fundador">
-                        <h2>CEO, FUNDADOR</h2>
-                    </div>
-                    <div class="contenedor-1-descripcion">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed
-                            mattis. Nunc at mauris ut velit sollicitudin dignissim ac eget
-                            turpis. Duis quis laoreet tellus, eu condimentum mauris.
-                            Quisque sed imperdiet lorem. Fusce euismod risus eu tortor
-                            dapibus vehicula. Integer rhoncus lorem nec lobortis
-                            sagittis. Aenean elementum et lorem in suscipit.
-                            Suspendisse at diam eget quam laoreet viverra.
-                            orem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed
-                            mattis. Nunc at mauris ut velit sollicitudin dignissim.                
-                        </p>
-                    </div>
-                    <div class="contenedor-1-button">
+        <div class="contenedor-ceo">
+            <div class="item1">
+                <img src="Imagenes/Nuestro-Equipo/ceo-referencia.png" alt="imagen-ceo">
+            </div>
+            <div class="item2">
+                <h1>HARODL BULLON</h1>
+                <h2>CEO, FUNDADOR</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed
+                    mattis. Nunc at mauris ut velit sollicitudin dignissim ac eget
+                    turpis. Duis quis laoreet tellus, eu condimentum mauris.
+                    Quisque sed imperdiet lorem. Fusce euismod risus eu tortor
+                    dapibus vehicula. Integer rhoncus lorem nec lobortis
+                    sagittis. Aenean elementum et lorem in suscipit.
+                    Suspendisse at diam eget quam laoreet viverra.
+                    orem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed
+                    mattis. Nunc at mauris ut velit sollicitudin dignissim. </p>
+                    <div class="contenedor-ceo-button">
                         <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
-                    </div>              
-                </div>
+                    </div>    
+                    
             </div>
+            
         </div>
-    </div>
 
-    <div class="contenedor-secundario">
-        <div class="contenedor-2-nombre">
+        <div class="contenedor-equipo-nombre">
             <h1>EQUIPO DE TRABAJO</h1>
         </div>
-    </div>
-        <div class="contenedor-secundario2">
-            <div class="contenedor-imagen">
-                <img src="Imagenes/Nuestro-Equipo/persona1-referencia.png" alt="Persona 1 - Descripción" class="imagen-equipo">
-                <div class="contenedor-texto1">
-                    <div class="contenedor-texto-h1">
-                        <h1>
-                            ANGELA SAAVEDRA
-                        </h1>
-                    </div>
-                    <div class="contenedor-texto-p1">
-                        <p>
-                            Incluye los mejores posts de tus viajes para que
-                            tus posibles colaboradores se hagan una idea del
-                            tipo de trabajo que realizas.                            
-                        </p>
-                    </div>
-                    <div class="contenedor-1-button">
-                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
-                    </div>                                       
-                </div>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="Imagenes/Nuestro-Equipo/persona1-referencia.png" alt="Persona 2 - Descripción" class="imagen-equipo">
-                <div class="contenedor-texto1">
-                    <div class="contenedor-texto-h1">
-                        <h1>
-                            DAMARIS BURGA
-                        </h1>
-                    </div>
-                    <div class="contenedor-texto-p1">
-                        <p>
-                            Incluye los mejores posts de tus viajes para que
-                            tus posibles colaboradores se hagan una idea del
-                            tipo de trabajo que realizas.                            
-                        </p>
-                    </div>
-                    <div class="contenedor-1-button">
-                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
-                    </div>                                   
-                </div>
-            </div>
-            <div class="contenedor-imagen">
-                <img src="Imagenes/Nuestro-Equipo/persona1-referencia.png" alt="Persona 3 - Descripción" class="imagen-equipo">
-                <div class="contenedor-texto1">
-                    <div class="contenedor-texto-h1">
-                        <h1>
-                            YULY DEUDÓR
-                        </h1>
-                    </div>
-                    <div class="contenedor-texto-p1">
-                        <p>
-                            Incluye los mejores posts de tus viajes para que
-                            tus posibles colaboradores se hagan una idea del
-                            tipo de trabajo que realizas.                            
-                        </p>
-                    </div>
-                    <div class="contenedor-1-button">
-                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
-                    </div>                               
-                </div>
-            </div>
-    </div>
 
-    <div class="contenedor-terciario">
-        <div class="contenedor-3-nombre">
-            <h1>ORGANIGRAMA</h1>
+        <div class="contenedor-equipo">
+            <div class="equipo">
+                <img src="Imagenes/Nuestro-Equipo/persona1-referencia.png" alt="equipo1">
+                <div class="equipo1-desc">
+                    <h1>
+                        ANGELA SAAVEDRA
+                    </h1>
+                    <p>
+                        Incluye los mejores posts de tus viajes para que
+                        tus posibles colaboradores se hagan una idea del
+                        tipo de trabajo que realizas. 
+                    </p>
+                    <div class="contenedor-1-button">
+                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
+                    </div>     
+                </div>
+            </div>
+            <div class="equipo">
+                <img src="Imagenes/Nuestro-Equipo/persona2-referencia.png" alt="equipo2">
+                <div class="equipo1-desc">
+                    <h1>
+                        DAMARIS BURGA
+                    </h1>
+                    <p>
+                        Incluye los mejores posts de tus viajes para que
+                        tus posibles colaboradores se hagan una idea del
+                        tipo de trabajo que realizas. 
+                    </p>
+                    <div class="contenedor-1-button">
+                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
+                    </div>     
+                </div>
+                </div>
+            <div class="equipo">
+                <img src="Imagenes/Nuestro-Equipo/persona3-referencia.png" alt="equipo3">
+                <div class="equipo1-desc">
+                    <h1>
+                        YULY DEUDÓR
+                    </h1>
+                    <p>
+                        Incluye los mejores posts de tus viajes para que
+                        tus posibles colaboradores se hagan una idea del
+                        tipo de trabajo que realizas. 
+                    </p>
+                    <div class="contenedor-1-button">
+                        <button class="button-contactar" onclick="window.open('https:wa.me/917365659', '_blank');">Contactar</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="contenedor-terciario3">
-        <img src="Imagenes/Nuestro-Equipo/organigrama.png" alt="Organigrama">
-    </div>
 
-
-    <div class="contenedor-cuarto">
-        <div class="contenedor-4-nombre">
-            <h1>NUESTROS ALIADOS</h1>
+        <div class="contenedor-organigrama-nombre">
+            <h1>
+                ORGANIGRAMA
+            </h1>
         </div>
-    </div>
+        <div class="contenedor-organigrama">
+            <img src="Imagenes/Nuestro-Equipo/organigrama.png" alt="organigrama">
+        </div>
 
-    <div class="contenedor-cuaternario4-IMG">
-        <div class="contenedor-cuaternario4-aliados">
+
+        <div class="contenedor-nuestroaliados-nombre">
+            <h1>
+                NUESTROS ALIADOS
+            </h1>
+        </div>
+        <div class="contenedor-alidados">
             <a href="https://x.com/UPN_Oficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
-                <img src="Imagenes/Nuestro-aliados/UPN.png" style="width: 240px;" alt="UPN">
+                <img src="Imagenes/Nuestro-aliados/UPN.png" alt="UPN">
             </a>
-            <a href="https://www.rexha.com" target="_blank">
-                <img src="Imagenes/Nuestro-aliados/REXHA.png" style="width: 135%;" alt="REXHA">
+            <a href="https://www.rexha.com/" target="_blank">
+                <img src="Imagenes/Nuestro-aliados/REXHA.png" alt="REXHA">
             </a>
             <a href="https://x.com/essentiapucp" target="_blank">
-                <img src="Imagenes/Nuestro-aliados/ESSENTIA.png" style="width: 110%;" alt="ESSENTIA">
+                <img src="Imagenes/Nuestro-aliados/ESSENTIA.png" alt="ESSENTIA">
             </a>
         </div>
-    </div>
-    
 
+
+    </main>
     <div class="chatbot-container">
         <div style="display: flex; flex-direction: row; z-index: 1001;">
                 <a href="https:wa.me/917365659" target="_blank" style="position: relative; right: 30px;">
@@ -246,77 +214,69 @@
             </div>
         </div>
     </div>    
+    <!--Pie de Página-->
+    <footer class="bg-white text-custom pt-5 pb-4" style="color: #2e2c7f;">
+        <div class="container text-center text-md-start" id="footer-id">
+            <div class="row">
+                <!-- Primera columna -->
+                <div
+                    class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <img src="Imagenes/Inicio/logo.png" alt="logo zumate" id="footer-logo" height="180">
 
-        <!--Pie de Página-->
-        <footer class="bg-white text-custom pt-5 pb-4" style="color: #5433bf;">
-            <div class="container text-center text-md-start" id="footer-id">
-                <div class="row">
-                    <!-- Primera columna -->
-                    <div
-                        class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 d-flex flex-column align-items-center justify-content-center text-center">
-                        <img src="Imagenes/Inicio/logo.png" alt="logo zumate" id="footer-logo" height="180">
-    
-                    </div>
-    
+                </div>
+
                 <!-- Segunda columna -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h4 class="mb-4" style="color: #472d9c;"><strong>Servicios</strong></h4>
+                    <h4 class="mb-4" style="color: #2e2c7f;"><strong>Servicios</strong></h4>
                     <hr class="mb-4">
                     <p><a class="nav-link" href="nuestroequipo.html">Contacto</a></p>
-                    <p><a class="nav-link" href="index.html">Noticias</a></p>
+                    <p><a class="nav-link" href="#">Noticias</a></p>
                     <p><a class="nav-link" href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Opiniones</a></p>
                     <p><a class="nav-link" href="donar.html">¿Quieres Donar?</a></p>
                     <p><a class="nav-link" href="https://forms.gle/bizL7dFcPYtXMMZAA" target="_blank">Libro de reclamaciones</a></p>
                 </div>
-    
-                    <!-- Tercera columna -->
-                    <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
-                        <h4 class="mb-4" style="color: #472d9c"><strong>Zumate ONG</strong></h4>
-                        <hr class="mb-4">
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-house-heart-fill" viewBox="0 0 22 22">
-                                <path
-                                    d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z" />
-                                <path
-                                    d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018" />
-                            </svg>
-                            Oficina Central: Jr. Huiracocha N°1570 - Jesús María
-                        </p>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-telephone-fill" viewBox="0 0 18 18">
-                                <path fill-rule="evenodd"
-                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                            </svg>
-                            Teléfono: +51 917 365 659
-                        </p>
-                        <p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                            </svg>
-                            E-mail: zumate.vive@gmail.com
-                        </p>
-                    </div>
+
+                <!-- Tercera columna -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+                    <h4 class="mb-4" style="color: #2e2c7f"><strong>Zumate ONG</strong></h4>
+                    <hr class="mb-4">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-house-heart-fill" viewBox="0 0 22 22">
+                            <path
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707z" />
+                            <path
+                                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018" />
+                        </svg>
+                        Oficina Central: Jr. Huiracocha N°1570 - Jesús María
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone-fill" viewBox="0 0 18 18">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        Teléfono: +51 917 365 659
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                        </svg>
+                        E-mail: zumate.vive@gmail.com
+                    </p>
                 </div>
             </div>
-            <!-- Derechos de autor -->
-            <div class="text-center mt-4">
-                <p><br>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
-            </div>
-        </footer>
-        <script src="js/chatbot.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        </div>
+        <!-- Derechos de autor -->
+        <div class="text-center mt-4">
+            <p><br>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="js/chatbot.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-
-        <script>
-            function redirectToPrograma() {
-                window.location.href = './programa.html';
-            }
-        </script>
-
 </body>
 </html>

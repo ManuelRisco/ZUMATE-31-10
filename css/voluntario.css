@@ -109,13 +109,15 @@ footer {
     padding: 20px; /* Espacio alrededor */
 }
 
-/* Títulos */
+
+/* Título principal */
 .title {
-    font-size: 4.5em; 
-    color: #2e2c7f; 
-    text-transform: uppercase; 
-    margin: 60px 0; 
-    font-weight: 800; 
+    font-size: 4.5em;
+    color: #2e2c7f;
+    text-transform: uppercase;
+    margin: 60px 0;
+    font-weight: 800;
+    line-height: 1.2; 
 }
 
 /* Párrafo debajo del título */
@@ -155,7 +157,7 @@ footer {
     height: auto; /* Altura automática para ajustarse al contenido */
     padding: 20px; 
     border-radius: 8px;
-    background-color: #81e178; /* Fondo verde para tarjetas */
+    background-color: #0cc0df; /* Fondo verde para tarjetas */
     display: flex;
     flex-direction: column; /* Para apilar contenido verticalmente */
     justify-content: center; /* Centrar contenido verticalmente */
@@ -225,7 +227,7 @@ footer {
 /* Media Queries para ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
     .title {
-        font-size: 3em; /* Ajustar tamaño del título en pantallas pequeñas */
+        font-size: 2.5em; /* Ajusta el tamaño del título en pantallas pequeñas */
     }
 
     .subtitle {
@@ -233,10 +235,16 @@ footer {
     }
 
     .voluntariado p {
-        font-size: 1.4rem; /* Ajustar tamaño del texto del párrafo en pantallas pequeñas */
+        font-size: 1.2rem; /* Ajustar tamaño del texto del párrafo en pantallas pequeñas */
     }
 
     .tarjeta, .evento {
         flex: 1 1 100%; /* Tarjetas ocuparán el 100% del ancho en pantallas muy pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2em; /* Ajuste adicional para pantallas muy pequeñas */
     }
 }

@@ -1,0 +1,439 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Usa el 100% de la altura de la ventana */
+    margin: 0; /* Elimina margen por defecto */
+}
+
+main {
+    flex: 1;
+    margin-top: 140px;
+    padding-bottom: 100px; /* Asegura espacio para el footer */
+}
+
+header{
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+
+.nav-link.btn-inicio {
+    background-color: #0cc0df !important; /* Color de fondo con prioridad */
+    color: black !important; /* Color del texto con prioridad */
+    padding: 8px 16px; /* Espaciado para que se vea como un botón */
+    border-radius: 4px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    display: inline-block; /* Comportamiento de botón */
+}
+
+
+/*Primera barra informativa*/
+.top-bar {
+    /*colores cambiados*/
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    background-color: #5056e9 ;
+}
+
+/*Pié de páginas*/
+footer {
+    width: 100%;
+    position: relative; /* Cambiar a 'relative' o 'static' */
+    margin-top: auto; /* Asegura que el footer se mueva al final */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Añadir padding para asegurar espacio */
+}
+/*media para logo footer*/
+@media (max-width: 767px) {
+    #footer-id {
+        position: relative;
+        bottom: 25px;
+    }
+    #footer-logo  {
+        height: 150px;
+    }
+}
+
+
+.contenedor-ceo {
+    display: flex;
+    flex-direction: row;
+    justify-content: end; /* Centra el contenedor horizontalmente */
+    align-items: center; /* Alinea la imagen y el texto verticalmente */
+    gap: 100px; /* Espacio entre la imagen y el texto */
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+}
+
+.item1 img {
+    max-width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    border-radius: 300px 300px 0px 0px; /* Redondea solo los bordes superiores */
+    object-fit: cover; /* Asegura que la imagen se mantenga dentro del contenedor */
+}
+
+.item2 {
+    background: rgb(12, 192, 223); /* Color de fondo deseado */
+    padding: 180px 100px;/* Reduce el padding para no desplazar tanto el contenido */
+    text-align: justify; /* Centra el texto horizontalmente */
+    max-width: 1000px; /* Ancho máximo del contenedor del texto */
+    flex-grow: 1; /* Permite que el texto se expanda para llenar el espacio disponible */
+}
+
+.item2 h1, .item2 h2 {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.item2 h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+    position: relative;
+    bottom: 50px;
+}
+.item2 h2 {
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(100, 102, 114);
+    font-kerning: none;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    bottom: 50px;
+}
+
+.item2 p {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor-equipo-nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+}
+.contenedor-equipo-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+
+.contenedor-equipo {
+    margin-top: 40px;
+
+    gap: 60px;
+    width: 60%;
+    position: relative;
+    top: 40px;
+    justify-content: center;
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+}
+.equipo1-desc h1 {
+    font-size: 25px;
+    font-weight: 650;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+}
+.equipo1-desc p {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-kerning: none;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+}
+.contenedor-equipo img {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.equipo1-desc {
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+    position: relative;
+    top: 40px;
+}
+.equipo1-desc h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-contactar {
+    background-color: #ff3333; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas del botón */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Efecto de transición para el color */
+}
+button:hover {
+    background-color: #ff1d06; /* Color del botón al pasar el ratón */
+}
+.equipo img{
+    position: relative;
+    left: 0px;
+}
+
+.contenedor-1-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+.equipo1-desc {
+    background: rgb(12, 192, 223); /* Color de fondo que deseas */
+}
+.equipo1-desc h1 {
+    position: relative;
+    top: 30px;
+}
+.equipo1-desc p {
+    position: relative;
+    top: 30px;
+}
+
+.equipo1-desc::before {
+    content: ""; /* Pseudo-elemento vacío */
+    position: absolute; /* Posicionarlo absolutamente */
+    top: 0px; /* Alinear en la parte superior */
+    left: -100vh; /* Extender hacia la izquierda */
+    right: -100vh; /* Extender hacia la derecha */
+    bottom: -60px; /* Extender hacia la parte inferior */
+    background: rgb(12, 192, 223); /* Color de fondo deseado */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+.contenedor-equipo {
+    display: flex;
+    flex-direction: row; /* Asegura que el flujo sea de izquierda a derecha (comportamiento predeterminado) */
+    gap: 20px; /* Espacio entre los elementos, opcional */
+    justify-content: center; /* Centra el contenido */
+    margin: 0 auto; /* Asegura que el contenedor esté centrado */
+}
+
+@media (max-width: 1464px){
+    .contenedor-ceo {
+        flex-direction: column;
+        position: relative;
+        top: 10px;
+    }
+    .contenedor-ceo img {
+        width: 80%;
+    }
+
+    .item2 {
+        max-width: 100%; /* Ancho máximo del contenedor del texto */
+    }
+
+}
+.equipo {
+    flex-grow: 1;
+}
+
+.contenedor-organigrama-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+
+.contenedor-organigrama-nombre {
+    margin-top: 230px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+.contenedor-organigrama {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    width: 100%; 
+}
+
+.contenedor-organigrama img {
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+}
+
+.contenedor-nuestroaliados-nombre h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+
+.contenedor-nuestroaliados-nombre {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor-nuestroaliados {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+    width: 100%; 
+}
+.contenedor-alidados {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.contenedor-alidados img {
+    height: 150px;
+    width: auto;
+}
+.contenedor-1-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+
+@media (max-width: 1639px) {
+    .contenedor-ceo {
+        gap: 80px; /* Espacio entre la imagen y el texto */
+    }
+}
+@media (max-width: 1619px) {
+    .contenedor-ceo {
+        gap: 50px; /* Espacio entre la imagen y el texto */
+    }
+}
+@media (max-width: 1591px) {
+    .contenedor-ceo {
+        gap: 20px; /* Espacio entre la imagen y el texto */
+    }
+}
+@media (max-width: 1563px) {
+    .item2 {
+        padding: 100px 100px;/* Reduce el padding para no desplazar tanto el contenido */
+    }
+    main {
+        top: 150px;
+    }
+}
+
+@media (max-width: 1124px){
+    .contenedor-equipo {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .equipo {
+        flex-grow: 1;
+        flex-basis: 200%;
+    }
+    .equipo {
+        display: flex;
+        justify-content: center;
+    }
+    .equipo img {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        right: 1px;
+        top: 50px;
+    }
+    .equipo1-desc {
+        left: 100px;
+    }
+    .button-contactar {
+        position: relative;
+        bottom: 20px;
+    }
+    .contenedor-alidados {
+        flex-direction: column;
+    }
+    .item1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 660px){
+    .equipo {
+        position: relative;
+        right: 40px;
+    }
+    .button-contactar {
+        position: relative;
+        bottom: 60px;
+        right: 300px;
+    }
+}
+@media (max-width: 744px){
+    .button-contactar {
+        position: relative;
+        top: 10px;
+    }
+}

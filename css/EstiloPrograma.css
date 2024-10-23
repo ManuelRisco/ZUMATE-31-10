@@ -214,3 +214,9 @@ footer {
     transform: translate(-50%, -50%) scale(1.05);
 }
 
+/* Media Queries para ajustes en pantallas pequeñas */
+@media (max-width: 768px) {
+    .title {
+        font-size: 3em; /* Ajustar tamaño del título en pantallas pequeñas */
+    }
+}

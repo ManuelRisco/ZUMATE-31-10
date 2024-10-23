@@ -1,0 +1,115 @@
+
+header{
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+.nav-link.btn-inicio {
+    background-color: #0cc0df !important; /* Color de fondo con prioridad */
+    color: black !important; /* Color del texto con prioridad */
+    padding: 8px 16px; /* Espaciado para que se vea como un botón */
+    border-radius: 4px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    display: inline-block; /* Comportamiento de botón */
+}
+
+
+/*Primera barra informativa*/
+.top-bar {
+    /*colores cambiados*/
+    background: linear-gradient(90deg, #2d2c7f, #493092, #b84466, #ed7a30, #ff1d06);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.btn-donar {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+
+.btn-donar:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+    background-color: #5056e9 ;
+}
+
+.contenedor{
+    padding-bottom: 5%;
+
+}
+
+.container{
+    flex-grow :1;
+}
+
+.imagen-contacto {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 0% !important;
+    border-radius: 30px;
+}
+
+.imagen-contacto img {
+    width: 100%;
+	height: auto;
+}
+
+.imagen-contacto h1{
+    margin-top: 40px;
+    font-family: 'Arial Black';
+    color: #2e2c7f;
+}
+
+.imagen-contacto p{
+    color: #23afc2;
+    font-size: 30px;
+    
+}
+
+#fondo-form{
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+
+/*Pié de páginas*/
+footer{
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
+}
+
+/*media para logo footer*/
+@media (max-width: 767px) {
+    #footer-id {
+        position: relative;
+        bottom: 25px;
+    }
+    #footer-logo  {
+        height: 150px;
+    }
+}
