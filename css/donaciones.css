@@ -86,7 +86,7 @@ h1 {
 .card{
     margin-top: 20px;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 120px;
     background-color: #0cc0df;
     border-radius: 20px;
@@ -94,6 +94,7 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .card p{
     padding: 0 3px 0 3px;
@@ -154,6 +155,15 @@ h1 {
     height: 100px;
     border-radius: 10px;
     background-color: #81e178;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ajustar-texto p {
+    font-size: 16px !important;
+}
+.card p {
+    font-size: 16px !important;
 }
 
 /*Pié de páginas*/

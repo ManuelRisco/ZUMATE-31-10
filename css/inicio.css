@@ -118,6 +118,10 @@ header{
     background-color: #b4c5dd;
     border-radius: 20px;
 }
+.card-text {
+    position: relative;
+    top: 30px;
+}
 
 /*Información noticias*/
 .contenedor-noticias{
