@@ -14,10 +14,7 @@
         body {
             background-size: cover;
             justify-content: center;
-            display: flex;
-            flex-direction: column;
             margin-top: 130px;
-            height: 100%;
         }
 
     </style>
@@ -43,9 +40,9 @@
                 </div>
             </div>
         </div>
-          <!--Navbar-->
+        <!--Navbar-->
     
-          <nav class="navbar navbar-expand-md bg-body-tertiary">
+         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
                 <img src="Imagenes/Inicio/logo.png" alt="logo zumate" height="90">
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -58,8 +55,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sobre Nosotros
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-1">Director Ejecutivo CEO</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-2">Equipo de trabajo</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-3">Organigrama</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-4">Nuestros aliados</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./Programa.html">Programas</a>
@@ -81,90 +86,60 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-        </nav>
-
-
+        </nav>        
     </header>
 
-<!-- Cuerpo -->
-<div class="contenedor-blog row d-flex justify-content-center col-lg-10 col-md-12 col-sm-12 mx-auto">
-    <div class="row g-4">
-        <h1 class="text-center mb-5" style="color: #302c7c; font-weight: 900; width: 100%; font-size: 4rem;">BLOG</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-10 mb-4 d-flex align-items-start">
-                <img src="Imagenes/Blog/blog-referencia.png" class="img-fluid" alt="Título del post 1" style="object-fit: cover; position: relative; top: 10px; width: 490px; height: 520px; margin-right: 52px; border-radius: 2%;">
-                <div class="card-body" id="card-text-id">
-                    <p class="card-text" style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit sollicitudin dignissim ac eget turpis. Duis quis laoreet tellus, eu condimentum mauris. Quisque sed imperdiet lorem. Fusce euismod risus eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis. Aenean elementum et lorem in suscipit. Suspendisse at diam eget quam laoreet viverra.</p>
-                    <p class="card-text" style="font-size: 1.3rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit sollicitudin dignissim dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus.</p>
-                    <p class="card-text" style="font-size: 1.3rem">Fusce euismod risus eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis. Aenean elementum et lorem in suscipit. Suspendisse at diam eget quam laoreet viverra.</p>
-                </div>
+    <main>
+
+        <div class="Blog">
+            <h1>
+                BLOG
+            </h1>
+        </div>
+        <div class="container-parte1">
+
+            <img src="Imagenes/Blog/blog-referencia.png" alt="imagen1">
+            <div class="container-parte1-texto">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tincidunt finibus diam. Nulla ornare mollis risus sed mattis. Nunc at mauris ut velit sollicitudin dignissim ac eget turpis. Duis quis laoreet tellus, eu condimentum mauris. Quisque sed imperdiet lorem. Fusce euismod risus eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis. Aenean elementum et lorem in suscipit. Suspendisse at diam eget quam laoreet viverra. 
+                    Integer rhoncus lorem nec lobortis sagittis. Aenean elementum et lorem in suscipit.
+                    usce euismod risus eu tortor dapibus vehicula. Integer rhoncus lorem nec lobortis sagittis.
+                </p>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
-                <div class="d-flex justify-content-center align-items-center" style="gap: 650px;">
-                    <div style="text-align: center;">
-                        <a href="https://www.facebook.com/profile.php?id=61565989621254&sk=reviews" target="_blank" aria-label="Dejar opinión en Facebook" style="text-decoration: none; border: none; background: none;">
-                            <button type="button" style="border: none; background: none; cursor: pointer;">
-                                <img src="Imagenes/Blog/estrellas.png" alt="estrellas" style="width: 310px; height: auto;">
-                            </button>
-                        </a>
+        </div>
 
-                    </div>    
-
-                    <div class="d-flex flex-column align-items-center position-relative">
-                        <!-- Botón de compartir -->
-                        <button id="shareButton" type="button" style="border: none; background: none; cursor: pointer;">
-                            <i class="fa-solid fa-share-from-square" alt="compartir" style="font-size: 40px; width: 40px; height: auto; position: relative; right: 110px;"></i>
-                        </button>
-                    
-                        <!-- Menú flotante de redes sociales (oculto por defecto) -->
-                        <div id="socialMenu" class="social-menu" style="display: none;">
-                            <div class="social-icons d-flex justify-content-around mt-3" style="position: relative; right: 10px;">
-                                <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank">
-                                    <img class="fa-brands fa-facebook-f" src="Imagenes/Social/facebook.png" alt="Facebook" style="font-size: 20px; color: #3b5998; width: 30px;" >
-                                </a>
-
-                                <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank">
-                                    <img class="fa-brands fa-tiktok" src="Imagenes/Social/Tiktok.png" alt="Tiktok" style="font-size: 20px; color: #3b5998; width: 30px;" >
-                                </a>
-
-
-                                <a href="https://www.instagram.com/zumateong/" target="_blank">
-                                    <img class="fa-brands fa-instagram" src="Imagenes/Social/instagram.png" alt="Instagram" style="font-size: 20px; color: #3b5998; width: 30px;" >
-                                </a>
-                                
-
-                                <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank">
-                                    <img class="fa-brands fa-linkedin" src="Imagenes/Social/Linkedin.png" alt="Linkedin" style="font-size: 20px; color: #3b5998; width: 40px; position: relative; bottom: 5px;" >
-                                </a>
-
-                            </div>
-                            <button id="closeMenu" style="border: none; background: none; cursor: pointer; color: red; font-size: 18px; margin-bottom: 30px;">X</button>
-                        </div>
+        <div class="conteiner-parte2">
+            <div class="container-parte2-opinion">
+                <div class="container-parte2-estrellas">
+                    <a href="https://www.facebook.com/profile.php?id=61565989621254&sk=reviews" target="_blank">
+                        <img src="Imagenes/Blog/estrellas.png" alt="estrellas">
+                    </a>
+                </div>
+        
+                <div class="container-parte2-compartir">
+                    <button class="button-compartir" onclick="toggleMenu()">
+                        <i class="fa-solid fa-share-from-square" alt="compartir" style="font-size: 40px; width: 40px; height: auto;"></i>
+                    </button>
+                    <!-- Menú flotante de redes sociales -->
+                    <div id="menu-flotante" class="menu-flotante">
+                        <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"><i class="fa-brands fa-facebook" style="font-size: 24px;"></i> Facebook</a>
+                        <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"><i class="fa-brands fa-tiktok" style="font-size: 24px;"></i> TikTok</a>
+                        <a href="https://www.instagram.com/zumateong/" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 24px;"></i> Instagram</a>
+                        <a href="https://www.linkedin.com/company/ong-zumate/about/" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 24px;"></i> LinkedIn</a>
                     </div>
-
                 </div>
             </div>
         </div>
-    </div>
-    
-    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-0">
-        <div class="d-flex justify-content-center align-items-center" style="gap: 650px;"> <!-- Ajusta el valor de gap según tus necesidades -->  
-            <div style="text-align: center;">
-                <h5 class="card-parrafo">Dejar opinión</h5>
-            </div>
-            <div style="text-align: center;">
-                <h5 class="card-parrafo">Compartir redes</h5>
-            </div>
+
+
+        <div class="Articulos">
+            <h1>
+                MÁS ARTÍCULOS
+            </h1>
         </div>
-    </div>
-
-
-
+        
 <!-- Contenedor articulos -->
 <div class="contenedor-articulos row d-flex justify-content-center col-lg-12 col-md-12 col-sm-12 mx-auto">
-    <h2 class="text-center mb-5" style="color: #302c7c; font-weight: 900; width: 100%; font-size: 4rem;">MÁS ARTICULOS</h2>
-    
-
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
         <div class="tarjeta-articulos" style="border: 1px solid #ddd; border-radius: 8px; transition: transform 0.2s;">
             <img src="Imagenes/Blog/blog-referencia-3.png" alt="articulo 2" class="img-fluid" style="border-radius: 8px 8px 0 0;">
@@ -194,37 +169,42 @@
             </div>
         </div>
     </div>
+</div> 
 
-</div>
 
-    
-</div>   
 
-<div class="chatbot-container">
-    <div style="display: flex; flex-direction: row; z-index: 1001;">
-        <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
-        <!-- Ventana del chatbot -->
-        <div id="chat-window" class="chat-window hidden">
-            <div class="chat-header">
-                <h2>Bienvenido a la ONG ZUMATE</h2>
-                <p>¿Cómo podemos ayudarte?</p>
-                <button id="close-chatbot" class="close-btn">X</button>
-            </div>
-            <div class="chat-body">
-                <p>Para resolver tus dudas, elige una de estas opciones:</p>
-                <!-- Opciones del chatbot en forma de botones -->
-                <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
-                <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
-                <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
-                <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
-                <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
-            </div>
-            <div id="chat-response" class="chat-response"></div>
+    </main>
+
+    <div class="chatbot-container">
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=+51917365659&text=Quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+                <img src="Imagenes/Gift/pngwing.com.png" style="height: 50px;" alt="Whatsapp">
+            </a>
         </div>
-    </div>
-</div>    
-    
-    
+        <div style="display: flex; flex-direction: row; z-index: 1001;">
+            <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
+            <!-- Ventana del chatbot -->
+            <div id="chat-window" class="chat-window hidden">
+                <div class="chat-header">
+                    <h2>Bienvenido a la ONG ZUMATE</h2>
+                    <p>¿Cómo podemos ayudarte?</p>
+                    <button id="close-chatbot" class="close-btn">X</button>
+                </div>
+                <div class="chat-body">
+                    <p>Para resolver tus dudas, elige una de estas opciones:</p>
+                    <!-- Opciones del chatbot en forma de botones -->
+                    <button class="chat-option" onclick="showInfo('donar')">Quiero donar</button>
+                    <button class="chat-option" onclick="showInfo('necesito-ayuda')">Necesito ayuda</button>
+                    <button class="chat-option" onclick="showInfo('soy-donante')">Soy donante</button>
+                    <button class="chat-option" onclick="showInfo('alianza')">Quiero una alianza corporativa</button>
+                    <button class="chat-option" onclick="showInfo('voluntario')">Quiero ser voluntario</button>
+                </div>
+                <div id="chat-response" class="chat-response"></div>
+            </div>
+        </div>
+    </div>    
+        
+        
     <!--Pie de Página-->
     <footer class="bg-white text-custom pt-5 pb-4" style="color: #2e2c7f;">
         <div class="container text-center text-md-start" id="footer-id">
@@ -241,7 +221,7 @@
                     <h4 class="mb-4" style="color: #2e2c7f;"><strong>Servicios</strong></h4>
                     <hr class="mb-4">
                     <p><a class="nav-link" href="nuestroequipo.html">Contacto</a></p>
-                    <p><a class="nav-link" href="index.html">Noticias</a></p>
+                    <p><a class="nav-link" href="#">Noticias</a></p>
                     <p><a class="nav-link" href="https://www.facebook.com/profile.php?id=61565989621254" target="_blank">Opiniones</a></p>
                     <p><a class="nav-link" href="donar.html">¿Quieres Donar?</a></p>
                     <p><a class="nav-link" href="https://forms.gle/bizL7dFcPYtXMMZAA" target="_blank">Libro de reclamaciones</a></p>
@@ -285,36 +265,19 @@
             <p><br>&copy; 2024 Zumate ONG. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-
-    <script src="js/chatbot.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-
-    <!-- JavaScript para manejar el evento de mostrar y cerrar el menú flotante -->
-    <script>
-    document.getElementById('shareButton').addEventListener('click', function() {
-        const socialMenu = document.getElementById('socialMenu');
-        socialMenu.style.display = 'block';
-    });
-
-    // Evento para cerrar el menú flotante cuando se hace clic en la X
-    document.getElementById('closeMenu').addEventListener('click', function() {
-        const socialMenu = document.getElementById('socialMenu');
-        socialMenu.style.display = 'none';
-    });
-</script>
-<script type="text/javascript">
-    window.onload = function(){
-    (function(d, script) {
-    script = d.createElement('script');
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = 'https://w.app/widget-v1/2vuJUC.js';
-    d.getElementsByTagName('head')[0].appendChild(script);
-    }(document));
-    };
-</script>
-</body>
-</html>
+    
+        <script src="js/chatbot.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("menu-flotante");
+                menu.style.display = menu.style.display === "none" || menu.style.display === "" ? "block" : "none";
+            }
+        </script>
+        
+    
+    </body>
+    </html>

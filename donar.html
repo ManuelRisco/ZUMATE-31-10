@@ -72,8 +72,16 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="./index.html">Inicio</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nuestroequipo.html">Sobre Nosotros</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sobre Nosotros
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-1">Director Ejecutivo CEO</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-2">Equipo de trabajo</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-3">Organigrama</a></li>
+                                    <li><a class="dropdown-item" href="nuestroequipo.html#id-4">Nuestros aliados</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./Programa.html">Programas</a>
@@ -95,9 +103,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-        </nav>
-
-
+        </nav>        
     </header>
 
     <!--Contenedor donar-->
@@ -184,6 +190,11 @@
         </div>
     </div>
     <div class="chatbot-container">
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=+51917365659&text=Quiero%20m%C3%A1s%20informaci%C3%B3n" target="_blank">
+                <img src="Imagenes/Gift/pngwing.com.png" style="height: 50px;" alt="Whatsapp">
+            </a>
+        </div>
         <div style="display: flex; flex-direction: row; z-index: 1001;">
             <button id="open-chatbot" class="chatbot-btn">Abrir Chat</button>
             <!-- Ventana del chatbot -->
@@ -302,17 +313,7 @@
             window.location.href = './programa.html';
         }
     </script>
-    <script type="text/javascript">
-        window.onload = function(){
-        (function(d, script) {
-        script = d.createElement('script');
-        script.type = 'text/javascript';
-        script.async = true;
-        script.src = 'https://w.app/widget-v1/2vuJUC.js';
-        d.getElementsByTagName('head')[0].appendChild(script);
-        }(document));
-        };
-    </script>
+
 </body>
 
 </html>

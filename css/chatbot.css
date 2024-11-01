@@ -1,8 +1,10 @@
 .chatbot-container {
     position: fixed;
     bottom: 23px;
-    right: 100px;
+    right: 30px;
     z-index: 2000; /* Asegura que el chatbot esté por delante de otros elementos */
+    display: flex;
+    gap: 20px;
 }
 
 .chatbot-btn {

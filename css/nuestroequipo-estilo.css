@@ -5,14 +5,14 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Usa el 100% de la altura de la ventana */
+    height: 350vh; /* Usa el 100% de la altura de la ventana */
     margin: 0; /* Elimina margen por defecto */
 }
 
 main {
     flex: 1;
     margin-top: 140px;
-    padding-bottom: 100px; /* Asegura espacio para el footer */
+    padding-bottom: 120px; /* Asegura espacio para el footer */
 }
 
 header{
@@ -151,7 +151,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
 
 }
 .contenedor-equipo-nombre h1 {
@@ -164,12 +163,9 @@ footer {
 }
 
 .contenedor-equipo {
-    margin-top: 40px;
-
     gap: 60px;
     width: 60%;
     position: relative;
-    top: 40px;
     justify-content: center;
     margin: 0 auto; /* Asegura que el contenedor esté centrado */
 }
@@ -221,10 +217,7 @@ footer {
 button:hover {
     background-color: #ff1d06; /* Color del botón al pasar el ratón */
 }
-.equipo img{
-    position: relative;
-    left: 0px;
-}
+
 
 .contenedor-1-button {
     display: flex;
@@ -293,7 +286,7 @@ button:hover {
 }
 
 .contenedor-organigrama-nombre {
-    margin-top: 230px;
+    margin-top: 140px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -330,7 +323,7 @@ button:hover {
 }
 
 .contenedor-nuestroaliados {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     position: relative; 
@@ -436,4 +429,19 @@ button:hover {
         position: relative;
         top: 10px;
     }
+}
+
+.tarjeta-equipo {
+    background-color: #1E3A8A;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    top: 60px;
+}
+
+.tarjeta-equipo img {
+    width: 180px;
+    height: 180px;
+    border: 4px solid white;
 }

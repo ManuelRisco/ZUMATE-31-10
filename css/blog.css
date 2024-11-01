@@ -1,9 +1,27 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Usa el 100% de la altura de la ventana */
+    margin: 0; /* Elimina margen por defecto */
+}
+
+main {
+    flex: 1;
+    margin-top: 100px;
+    padding-bottom: 100px; /* Asegura espacio para el footer */
+}
+
 header{
     top: 0;
     width: 100%;
     z-index: 1000;
     position: fixed;
 }
+
 .nav-link.btn-inicio {
     background-color: #0cc0df !important; /* Color de fondo con prioridad */
     color: black !important; /* Color del texto con prioridad */
@@ -12,6 +30,8 @@ header{
     text-decoration: none; /* Quitar subrayado */
     display: inline-block; /* Comportamiento de botón */
 }
+
+
 /*Primera barra informativa*/
 .top-bar {
     /*colores cambiados*/
@@ -22,27 +42,14 @@ header{
     padding: 10px 20px;
     width: 100%;
 }
+
 .top-bar a {
     color: #ffffff;
     text-decoration: none;
     margin-left: 20px;
     font-weight: 500;
 }
-/*Barra de navegación*/
 
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
-    opacity: 1;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(0);
-}
-
-.dropdown-menu {
-    display: none;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
 
 .btn-donar {
     background-color: #ff3333;
@@ -58,13 +65,189 @@ header{
 .btn-donar:hover{
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     transform: translateY(-3%);
-    background-color: #5056e9;
+    background-color: #5056e9 ;
+}
+
+/*Pié de páginas*/
+footer {
+    width: 100%;
+    position: relative; /* Cambiar a 'relative' o 'static' */
+    margin-top: auto; /* Asegura que el footer se mueva al final */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 20px; /* Añadir padding para asegurar espacio */
+}
+/*media para logo footer*/
+@media (max-width: 767px) {
+    #footer-id {
+        position: relative;
+        bottom: 25px;
+    }
+    #footer-logo  {
+        height: 150px;
+    }
 }
 
 
+/*---------------------------------------------------*/
+
+.Blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Blog h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
+.container-parte1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.container-parte1 img {
+    object-fit: cover;
+    width: 490px;
+    height: 520px;
+    border-radius: 2%;
+}
+
+.container-parte1 p {
+    font-size: 25px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+@media (max-width: 1364px){
+    .container-parte1 p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1140px){
+    .container-parte1 {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 494px){
+    .container-parte1 img {
+        width: 400px;
+        height: 250px;
+    }
+}
 
 
+.container-parte2-estrellas {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    position: relative;
+    left: 360px;
+}
+.container-parte2-estrellas img{
+    height: 110px;
+    width: auto;
+}
 
+.container-parte2-opinion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 180px;
+    gap: 40%;
+}
+
+.container-parte2-compartir {
+    display: flex;
+    position: relative;
+}
+.button-compartir {
+    height: 50px;
+    border: none;
+    background: transparent;
+    position: relative;
+    top: 15px;
+}
+
+    /* Estilos del menú flotante */
+    .menu-flotante {
+        display: none; /* Oculto por defecto */
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        z-index: 2;
+    }
+
+    .menu-flotante a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+        margin: 10px 0;
+        gap: 10px;
+    }
+
+    .menu-flotante a i {
+        margin-right: 8px;
+    }
+
+    @media (max-width: 926px){
+        .container-parte2-estrellas img {
+            position: relative;
+            right: 60px;
+        }
+        .container-parte2-estrellas a {
+            position: relative;
+            right: 60px;
+        }
+        .container-parte2-compartir {
+            position: relative;
+            left: 100px;
+        }
+        #menu-flotante a {
+            position: relative;
+            left: 1px;
+        }
+    }
+
+    /*-------------------------------------------------------------*/
+
+
+    /*---------------------------------------------------*/
+
+.Articulos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.Articulos h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    font-style: normal;
+    font-kerning: none;
+    text-decoration: none;
+    color: rgb(46, 44, 127);
+}
 
 .icono-articulos{
     text-align: center;
@@ -91,8 +274,9 @@ header{
 /* Información artículos */
 
 .contenedor-articulos {
-
-    padding: 3% 20% 3% 20%; /* Ajusta el padding izquierdo */
+    display: flex;
+    flex-direction: row;
+    padding: 3% 15% 3% 15%; /* Ajusta el padding izquierdo */
     position: relative;
     left: 20px;
     width: 100%;
@@ -106,7 +290,7 @@ header{
 }
 
 .tarjeta-articulos {
-    width: 90%;
+    width: auto;
     height: auto; /* Altura automática */
     border-radius: 20px;
     color: black;
@@ -116,6 +300,7 @@ header{
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     transition: all 400ms ease;
     margin-bottom: 20px; /* Añadido margen inferior */
+
 }
 
 .tarjeta-articulos:hover {
@@ -136,65 +321,8 @@ header{
     max-height: 30%;
 }
 
-
-/*Pié de páginas*/
-footer{
-    width: 100%;
-    position: relative;
-    margin-top: auto;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /*sombra*/
-}
-
-/*media para logo footer*/
-@media (max-width: 767px) {
-    #footer-id {
-        position: relative;
-        bottom: 25px;
-    }
-    #footer-logo  {
-        height: 150px;
+@media (max-width: 1202px){
+    main {
+        min-height: 120vh;
     }
 }
-
-@media (max-width: 1177px){
-
-}
-
-
-
-
-.social-menu {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 998;
-    width: 280px; /* Aumenta el tamaño del menú */
-}
-
-#closeMenu {
-    position: absolute;
-    top: 10px; /* Posiciona la X más arriba */
-    right: 10px; /* Posiciona la X a la derecha */
-    font-size: 28px; /* Aumenta el tamaño de la X */
-}
-
-.social-icons a {
-    margin: 0 15px;
-}
-
-.social-icons i {
-    transition: transform 0.2s ease;
-}
-
-.social-icons i:hover {
-    transform: scale(1.4); /* Agranda los iconos al hacer hover */
-}
-
-
-
-
-
